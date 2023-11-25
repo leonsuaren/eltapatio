@@ -6,6 +6,7 @@ function App() {
     <>
       <utils.GlobalStyles />
       <h1>El Tapatio FoodTruck</h1>
+      <p>hola</p>
     </>
   )
 }
