@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   body {
-    background-color: #FFFFFF;
+    background-color: #F5F3F3;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,5 +14,6 @@ export const GlobalStyles = createGlobalStyle`
   a, p {
     font-family: 'caveat brush';
     color: #515151;
+    text-decoration: none;
   }
 `;

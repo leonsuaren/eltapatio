@@ -1,14 +1,29 @@
-import * as utils from './utils';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { Navbar } from "./components/navbar";
+import * as utils from "./utils";
+import { Home } from "./views/home";
+import { Menu } from "./views/menu";
+import { Services } from './views/services';
+import { ContactUs } from "./views/contactus";
+import { AboutUs } from "./views/aboutus";
 
 function App() {
-
   return (
     <>
       <utils.GlobalStyles />
-      <h1>El Tapatio FoodTruck</h1>
-      <p>hola</p>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="menu" element={<Menu />}/>
+          <Route path="services" element={<Services />}/>
+          <Route path="contactus" element={<ContactUs />}/>
+          <Route path="aboutus" element={<AboutUs />}/>
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
