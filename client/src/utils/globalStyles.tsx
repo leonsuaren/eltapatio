@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: caveat;
     color: #2E2E2E;
   }
-  a, p {
+  a, p, span {
     font-family: 'caveat brush';
     color: #515151;
     text-decoration: none;
