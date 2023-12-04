@@ -7,6 +7,7 @@ import { Menu } from "./views/menu";
 import { Services } from './views/services';
 import { ContactUs } from "./views/contactus";
 import { AboutUs } from "./views/aboutus";
+import SidePanel from "./components/side-panel/SidePanel";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <utils.GlobalStyles />
       <Router>
         <Navbar />
+        <SidePanel />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="menu" element={<Menu />}/>
