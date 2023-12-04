@@ -11,4 +11,8 @@ export const LanguageButtonStyled = styled.button`
   &:hover {
     transform: scale(1.1)
   }
+  @media (min-width: 967px) {
+    width: 100px;
+    height: 30px;
+  }
 `;
