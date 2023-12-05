@@ -1,9 +1,12 @@
-import { SidePanelWrapper } from './styled.ts';
+import { SidePanelWrapper, SidePanelHeader, Logo, SidePanelCloseButton, SidePanelCloseButtonIcon } from "./styled.ts";
 
-export default function SidePanel () {
+export default function SidePanel() {
   return (
     <SidePanelWrapper>
-      <h1>Side Panel</h1>
+      <SidePanelHeader>
+        <Logo src="./logoeltapatio.png" alt="El Tapatío" />
+        <SidePanelCloseButton><SidePanelCloseButtonIcon /></SidePanelCloseButton>
+      </SidePanelHeader>
     </SidePanelWrapper>
-  )
+  );
 }
