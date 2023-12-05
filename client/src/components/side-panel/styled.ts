@@ -19,7 +19,7 @@ export const SidePanelWrapper = styled.div`
 
 export const SidePanelHeader = styled.div`
   width: auto;
-  height: 82px;
+  height: 20%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,4 +39,12 @@ export const SidePanelCloseButton = styled.button`
 
 export const SidePanelCloseButtonIcon = styled(TfiClose)`
   font-size: 1.3rem;
+`;
+
+export const SidePanelBody = styled.div`
+    width: auto;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 100px 0;
 `;
