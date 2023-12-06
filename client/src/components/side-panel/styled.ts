@@ -3,15 +3,13 @@ import { TfiClose } from "react-icons/tfi";
 
 export const SidePanelWrapper = styled.div`
   width: 90%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(245, 243, 243,0.9);
   position: absolute;
   top: 0;
   left: 0;
   box-shadow: 5px 5px 5px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
   @media(min-width: 668px) {
     display: none;
   }
@@ -19,7 +17,7 @@ export const SidePanelWrapper = styled.div`
 
 export const SidePanelHeader = styled.div`
   width: auto;
-  height: 20%;
+  height: 90px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,5 +44,4 @@ export const SidePanelBody = styled.div`
     height: 80%;
     display: flex;
     flex-direction: column;
-    padding: 40px 0 100px 0;
 `;
