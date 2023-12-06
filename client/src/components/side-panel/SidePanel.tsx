@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import NavigationLinks from "../navigation-links/NavigationLinks.tsx";
 import {
   SidePanelWrapper,
@@ -9,11 +11,20 @@ import {
 } from "./styled.ts";
 
 export default function SidePanel() {
+  const [closeSidePanel, setCloseSidePanel] = useState<boolean>(false);
+
+  const handleOnCloseSidePanel = () => {
+    setCloseSidePanel(() => {
+      return true
+    });
+  }
+  console.log(closeSidePanel);
+
   return (
-    <SidePanelWrapper>
+    <SidePanelWrapper closeSidePanel={closeSidePanel}>
       <SidePanelHeader>
         <Logo src="./logoeltapatio.png" alt="El Tapatío" />
-        <SidePanelCloseButton>
+        <SidePanelCloseButton onClick={handleOnCloseSidePanel}>
           <SidePanelCloseButtonIcon />
         </SidePanelCloseButton>
       </SidePanelHeader>

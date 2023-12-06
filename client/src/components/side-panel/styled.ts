@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { TfiClose } from "react-icons/tfi";
 
-export const SidePanelWrapper = styled.div`
+type SidePanelProps = {
+  closeSidePanel?: boolean
+}
+
+export const SidePanelWrapper = styled.div<SidePanelProps>`
   width: 90%;
   height: 100vh;
   background-color: rgba(245, 243, 243,0.9);
@@ -10,6 +14,7 @@ export const SidePanelWrapper = styled.div`
   left: 0;
   box-shadow: 5px 5px 5px;
   border-radius: 10px;
+  display: ${(props => props.closeSidePanel ? 'none' : '')};
   @media(min-width: 668px) {
     display: none;
   }

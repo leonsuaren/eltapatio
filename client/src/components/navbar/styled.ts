@@ -43,7 +43,6 @@ export const MenuButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
   @media(min-width: 668px) {
     display: none;
   }

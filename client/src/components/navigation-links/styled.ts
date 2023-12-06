@@ -9,7 +9,6 @@ export const NavigationList = styled.ul`
     width: auto;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0;
   @media(min-width: 668px) {
     width: 100%;
     display: flex;
