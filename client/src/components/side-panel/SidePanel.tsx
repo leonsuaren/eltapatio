@@ -14,11 +14,10 @@ export default function SidePanel() {
   const [closeSidePanel, setCloseSidePanel] = useState<boolean>(false);
 
   const handleOnCloseSidePanel = () => {
-    setCloseSidePanel(() => {
-      return true
+    setCloseSidePanel((prevState) => {
+      return !prevState
     });
   }
-  console.log(closeSidePanel);
 
   return (
     <SidePanelWrapper closeSidePanel={closeSidePanel}>
@@ -29,7 +28,7 @@ export default function SidePanel() {
         </SidePanelCloseButton>
       </SidePanelHeader>
       <SidePanelBody>
-        <NavigationLinks />
+        <NavigationLinks onCloseSidePanel={handleOnCloseSidePanel}/>
       </SidePanelBody>
     </SidePanelWrapper>
   );

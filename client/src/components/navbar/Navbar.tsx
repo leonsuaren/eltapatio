@@ -9,15 +9,20 @@ import {
   NavbarNavigationList,
 } from "./styled.ts";
 
-export const Navbar = () => {
+type NavbarProps = {
+  onCloseSidePanel: () => void
+}
+
+export const Navbar = ({onCloseSidePanel}: NavbarProps) => {
+
   return (
     <Navigation>
       <MenuButtonWrapper>
-        <MenuButton />
+        <MenuButton onCloseSidePanel={onCloseSidePanel}/>
       </MenuButtonWrapper>
       <Logo src="./logoeltapatio.png" alt="El Tapatío" />
       <NavbarNavigationList>
-        <NavigationLinks />
+        <NavigationLinks onCloseSidePanel={onCloseSidePanel} />
       </NavbarNavigationList>
       <LanguageButtonWraper>
         <LanguageButton />

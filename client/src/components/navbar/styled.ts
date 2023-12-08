@@ -28,7 +28,7 @@ export const Logo = styled.img`
   }
 `;
 
-export const NavbarNavigationList = styled.ul`
+export const NavbarNavigationList = styled.div`
   display: none;
   @media(min-width: 668px) {
     width: 100%;
