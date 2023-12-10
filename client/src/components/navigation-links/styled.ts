@@ -12,7 +12,6 @@ export const NavigationList = styled.ul`
     height: 80%;
     width: auto;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 0;
   @media(min-width: 668px) {
     width: 100%;
@@ -22,7 +21,7 @@ export const NavigationList = styled.ul`
   }
 `;
 
-/*non if the attributes on this link are working */
+/*none if the attributes on this link are working */
 export const NavigationLink = styled(Link)<NavigationLinksProps>`
   padding: 4px 8px;
   display: flex;
