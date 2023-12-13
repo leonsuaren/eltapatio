@@ -28,7 +28,7 @@ export default function SidePanel() {
         </SidePanelCloseButton>
       </SidePanelHeader>
       <SidePanelBody>
-        <NavigationLinks onCloseSidePanel={handleOnCloseSidePanel}/>
+        <NavigationLinks mode='sidePanel' onCloseSidePanel={handleOnCloseSidePanel}/>
       </SidePanelBody>
     </SidePanelWrapper>
   );

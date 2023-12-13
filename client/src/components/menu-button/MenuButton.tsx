@@ -1,14 +1,9 @@
 import { MenuButtonStyled, ImgStyeld } from './styled.ts';
 
-type MenuButtonProps = {
-  onCloseSidePanel: () => void
-}
-
-export default function MenuButton({onCloseSidePanel}: MenuButtonProps) {
-
+export default function MenuButton() {
 
 return (
-  <MenuButtonStyled onClick={() => onCloseSidePanel}>
+  <MenuButtonStyled>
     <ImgStyeld src="./kebab-menu.svg" />
   </MenuButtonStyled>
 )

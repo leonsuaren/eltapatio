@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { Link } from './Link.tsx';
 
 type NavigationLinksProps = {
-  isActive?: boolean
+  isActive?: boolean,
+  openSidePanel?: boolean
 }
 
 export const NavigationList = styled.ul`
