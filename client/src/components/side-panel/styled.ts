@@ -14,7 +14,7 @@ export const SidePanelWrapper = styled.div<SidePanelProps>`
   left: 0;
   box-shadow: 5px 5px 5px;
   border-radius: 10px;
-  display: ${(props => props.closeSidePanel ? 'none' : '')};
+  display: ${(props => props.closeSidePanel ? '' : 'none')};
   @media(min-width: 668px) {
     display: none;
   }
