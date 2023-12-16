@@ -8,7 +8,7 @@ import {
 
 type SidePanelProps = {
   mode: "sidePanel",
-  onCloseSidePanel: () => void;
+  // onCloseSidePanel: () => void;
 }
 
 type NavbarProps = {
@@ -56,31 +56,32 @@ export default function NavigationLinks(
     );
   }
 
-  const { onCloseSidePanel } = props;
+  // const { onCloseSidePanel } = props;
 
   return (
     <NavigationList>
-      <NavigationLikWrapper onClick={() => onCloseSidePanel()}>
+      {/* <NavigationLikWrapper onClick={() => onCloseSidePanel()}> */}
+      <NavigationLikWrapper>
         <NavigationLink to="/" isActive={pathname === "/"}>
           Home
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper onClick={() => onCloseSidePanel()}>
+      <NavigationLikWrapper>
         <NavigationLink to="menu" isActive={pathname === "menu"}>
           Menu
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper onClick={() => onCloseSidePanel()}>
+      <NavigationLikWrapper>
         <NavigationLink to="services" isActive={pathname === "services"}>
           Services
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper onClick={() => onCloseSidePanel()}>
+      <NavigationLikWrapper>
         <NavigationLink to="contactus" isActive={pathname === "contactus"}>
           Contact Us
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper onClick={() => onCloseSidePanel()}>
+      <NavigationLikWrapper>
         <NavigationLink to="aboutus" isActive={pathname === "aboutus"}>
           About Us
         </NavigationLink>

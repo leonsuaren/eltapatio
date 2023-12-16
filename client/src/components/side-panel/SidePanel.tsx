@@ -12,6 +12,13 @@ import {
 } from "./styled.ts";
 
 export default function SidePanel() {
+  // const [closeSidePanel, setCloseSidePanel] = useState<boolean>(false);
+
+  // const handleOnCloseSidePanel = () => {
+  //   setCloseSidePanel((prevState) => {
+  //     return !prevState
+  //   });
+  // }
   const sidePanelCtx = useSidePanelContext();
 
   return (
