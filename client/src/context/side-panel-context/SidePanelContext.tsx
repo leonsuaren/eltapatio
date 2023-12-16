@@ -31,7 +31,7 @@ export default function SidePanelContextProvider({
   //   openCloseSidePanel: false
   // });
   const ctx: SidePanelContextValue = {
-    openCloseSidePanel: false,
+    openCloseSidePanel: true,
     onOpenSidePanel() {
       // setSidePanelAction((prevState) => {})
     },

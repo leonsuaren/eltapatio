@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { Suspense } from 'react';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 import {
   NavigationList,
@@ -24,6 +24,7 @@ type NavigationLinksProps = SidePanelProps | NavbarProps;
 : NavigationLinksProps) {
 
   const { pathname } = useLocation();
+  const { t } = useTranslation();
   const {mode} = props;
 
   if (mode === "navbar") {
@@ -65,27 +66,27 @@ type NavigationLinksProps = SidePanelProps | NavbarProps;
       {/* <NavigationLikWrapper onClick={() => onCloseSidePanel()}> */}
       <NavigationLikWrapper>
         <NavigationLink to="/" isActive={pathname === "/"}>
-          {/* {t('NavigationLinksTranslation.home')} */}
+          {t('NavigationLinksTranslation.home')}
         </NavigationLink>
       </NavigationLikWrapper>
       <NavigationLikWrapper>
         <NavigationLink to="menu" isActive={pathname === "menu"}>
-          {/* {t('NavigationLinksTranslation.menu')} */}
+          {t('NavigationLinksTranslation.menu')}
         </NavigationLink>
       </NavigationLikWrapper>
       <NavigationLikWrapper>
         <NavigationLink to="services" isActive={pathname === "services"}>
-        {/* {t('NavigationLinksTranslation.services')} */}
+        {t('NavigationLinksTranslation.services')}
         </NavigationLink>
       </NavigationLikWrapper>
       <NavigationLikWrapper>
         <NavigationLink to="contactus" isActive={pathname === "contactus"}>
-        {/* {t('NavigationLinksTranslation.contactus')} */}
+        {t('NavigationLinksTranslation.contactus')}
         </NavigationLink>
       </NavigationLikWrapper>
       <NavigationLikWrapper>
         <NavigationLink to="aboutus" isActive={pathname === "aboutus"}>
-        {/* {t('NavigationLinksTranslation.aboutus')} */}
+        {t('NavigationLinksTranslation.aboutus')}
         </NavigationLink>
       </NavigationLikWrapper>
     </NavigationList>
