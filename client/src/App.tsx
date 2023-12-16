@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SidePanelContextProvider from "./context/side-panel-context/SidePanelContext";
 
 import { Navbar } from "./components/navbar";
 import * as utils from "./utils";
@@ -11,7 +12,7 @@ import SidePanel from "./components/side-panel/SidePanel";
 
 function App() {
   return (
-    <>
+    <SidePanelContextProvider>
       <utils.GlobalStyles />
       <Router>
         <Navbar />
@@ -24,7 +25,7 @@ function App() {
           <Route path="aboutus" element={<AboutUs />}/>
         </Routes>
       </Router>
-    </>
+    </SidePanelContextProvider>
   );
 }
 

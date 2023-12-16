@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { Suspense } from 'react';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 
 import {
   NavigationList,
@@ -10,7 +10,7 @@ import {
 
 type SidePanelProps = {
   mode: "sidePanel",
-  onCloseSidePanel: () => void;
+  // onCloseSidePanel: () => void;
 }
 
 type NavbarProps = {
@@ -58,43 +58,44 @@ type NavigationLinksProps = SidePanelProps | NavbarProps;
     );
   }
 
-  const { onCloseSidePanel } = props;
+  // const { onCloseSidePanel } = props;
 
   return (
     <NavigationList>
-      <NavigationLikWrapper onClick={() => onCloseSidePanel()}>
+      {/* <NavigationLikWrapper onClick={() => onCloseSidePanel()}> */}
+      <NavigationLikWrapper>
         <NavigationLink to="/" isActive={pathname === "/"}>
-          {t('NavigationLinksTranslation.home')}
+          {/* {t('NavigationLinksTranslation.home')} */}
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper onClick={() => onCloseSidePanel()}>
+      <NavigationLikWrapper>
         <NavigationLink to="menu" isActive={pathname === "menu"}>
-          {t('NavigationLinksTranslation.menu')}
+          {/* {t('NavigationLinksTranslation.menu')} */}
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper onClick={() => onCloseSidePanel()}>
+      <NavigationLikWrapper>
         <NavigationLink to="services" isActive={pathname === "services"}>
-        {t('NavigationLinksTranslation.services')}
+        {/* {t('NavigationLinksTranslation.services')} */}
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper onClick={() => onCloseSidePanel()}>
+      <NavigationLikWrapper>
         <NavigationLink to="contactus" isActive={pathname === "contactus"}>
-        {t('NavigationLinksTranslation.contactus')}
+        {/* {t('NavigationLinksTranslation.contactus')} */}
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper onClick={() => onCloseSidePanel()}>
+      <NavigationLikWrapper>
         <NavigationLink to="aboutus" isActive={pathname === "aboutus"}>
-        {t('NavigationLinksTranslation.aboutus')}
+        {/* {t('NavigationLinksTranslation.aboutus')} */}
         </NavigationLink>
       </NavigationLikWrapper>
     </NavigationList>
   );
 }
 
-export default function WrappedNavigationLinks({onCloseSidePanel}: NavigationLinksProps) {
+export default function WrappedNavigationLinks({mode}: NavigationLinksProps) {
   return(
     <Suspense>
-      <NavigationLinks onCloseSidePanel={onCloseSidePanel}/>
+      <NavigationLinks mode={mode}/>
     </Suspense>
   )
 }
