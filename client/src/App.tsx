@@ -3,7 +3,7 @@ import SidePanelContextProvider from "./context/side-panel-context/SidePanelCont
 
 import { Navbar } from "./components/navbar";
 import * as utils from "./utils";
-import { Home } from "./views/home";
+import WrappedHome from './views/home/Home.tsx';
 import { Menu } from "./views/menu";
 import { Services } from './views/services';
 import { ContactUs } from "./views/contactus";
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <SidePanel />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<WrappedHome />} />
           <Route path="menu" element={<Menu />}/>
           <Route path="services" element={<Services />}/>
           <Route path="contactus" element={<ContactUs />}/>
