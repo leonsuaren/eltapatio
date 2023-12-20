@@ -1,7 +1,9 @@
-import { LanguageButtonStyled } from './styled';
+import { LanguageButtonStyled, LanButtonInsideSwitch } from './styled';
 
 export default function LanguageButton() {
   return (
-    <LanguageButtonStyled><span>ES</span></LanguageButtonStyled>
+    <LanguageButtonStyled>
+      <LanButtonInsideSwitch><span>Español</span></LanButtonInsideSwitch>
+    </LanguageButtonStyled>
   ) 
 }
