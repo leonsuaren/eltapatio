@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { type FC, useState } from 'react';
 
 import { LanguageButtonStyled, LanButtonInsideSwitch } from './styled';
 
 import { useTranslation } from 'react-i18next';
 
-export default function LanguageButton() {
+const LanguageButton: FC = () => {
+
   const [ languageSwitch, setLanguageSwitch ] = useState<string>('en');
   const { i18n } = useTranslation();
 
@@ -24,3 +25,5 @@ export default function LanguageButton() {
     </LanguageButtonStyled>
   ) 
 }
+
+export default LanguageButton

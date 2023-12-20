@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { FC, Suspense } from "react";
 
 import { useLocation } from "react-router-dom";
 
@@ -92,10 +92,12 @@ function NavigationLinks(props: NavigationLinksProps) {
   );
 }
 
-export default function WrappedNavigationLinks({ mode }: NavigationLinksProps) {
+const WrappedNavigationLinks: FC<NavigationLinksProps> = ({mode}) => {
   return (
     <Suspense fallback="loading">
       <NavigationLinks mode={mode} />
     </Suspense>
   );
 }
+
+export default WrappedNavigationLinks;

@@ -1,3 +1,5 @@
+import { type FC } from "react";
+
 import LanguageButton from "../language-button/LanguageButton.tsx";
 import NavigationLinks from "../navigation-links/NavigationLinks.tsx";
 import MenuButton from "../menu-button/MenuButton.tsx";
@@ -9,7 +11,7 @@ import {
   NavbarNavigationList,
 } from "./styled.ts";
 
-export const Navbar = () => {
+const Navbar: FC = () => {
 
   return (
     <Navigation>
@@ -26,3 +28,5 @@ export const Navbar = () => {
     </Navigation>
   );
 };
+
+export default Navbar;

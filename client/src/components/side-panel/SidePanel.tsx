@@ -11,7 +11,7 @@ import {
   SidePanelBody,
 } from "./styled.ts";
 
-export default function SidePanel() {
+const SidePanel = () => {
   // const [closeSidePanel, setCloseSidePanel] = useState<boolean>(false);
 
   // const handleOnCloseSidePanel = () => {
@@ -35,3 +35,5 @@ export default function SidePanel() {
     </SidePanelWrapper>
   );
 }
+
+export default SidePanel;

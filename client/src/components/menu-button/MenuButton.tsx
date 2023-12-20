@@ -1,6 +1,7 @@
+import { type FC } from 'react';
 import { MenuButtonStyled, ImgStyeld } from './styled.ts';
 
-export default function MenuButton() {
+const MenuButton: FC = () => {
 
 return (
   <MenuButtonStyled>
@@ -8,3 +9,5 @@ return (
   </MenuButtonStyled>
 )
 }
+
+export default MenuButton;
