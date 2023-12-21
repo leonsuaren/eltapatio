@@ -1,4 +1,6 @@
-import { FC, Suspense } from "react";
+import { FC, Suspense, useContext } from "react";
+
+import { SidePanelContext } from "../../context/side-panel-context/SidePanelContext.tsx";
 
 import { useLocation } from "react-router-dom";
 
@@ -12,7 +14,6 @@ import {
 
 type SidePanelProps = {
   mode: "sidePanel";
-  // onCloseSidePanel: () => void;
 };
 
 type NavbarProps = {
@@ -22,6 +23,7 @@ type NavbarProps = {
 type NavigationLinksProps = SidePanelProps | NavbarProps;
 
 function NavigationLinks(props: NavigationLinksProps) {
+  const sidePanelContext = useContext(SidePanelContext);
   const { pathname } = useLocation();
   const { t } = useTranslation();
   const { mode } = props;
@@ -58,32 +60,29 @@ function NavigationLinks(props: NavigationLinksProps) {
     );
   }
 
-  // const { onCloseSidePanel } = props;
-
   return (
     <NavigationList>
-      {/* <NavigationLikWrapper onClick={() => onCloseSidePanel()}> */}
-      <NavigationLikWrapper>
+      <NavigationLikWrapper onClick={() => sidePanelContext.closeSidePanel()}>
         <NavigationLink to="/" isActive={pathname === "/"}>
           {t("navigation.home")}
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper>
+      <NavigationLikWrapper onClick={() => sidePanelContext.closeSidePanel()}>
         <NavigationLink to="menu" isActive={pathname === "menu"}>
           {t("navigation.menu")}
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper>
+      <NavigationLikWrapper onClick={() => sidePanelContext.closeSidePanel()}>
         <NavigationLink to="services" isActive={pathname === "services"}>
           {t("navigation.services")}
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper>
+      <NavigationLikWrapper onClick={() => sidePanelContext.closeSidePanel()}>
         <NavigationLink to="contactus" isActive={pathname === "contactus"}>
           {t("navigation.contactus")}
         </NavigationLink>
       </NavigationLikWrapper>
-      <NavigationLikWrapper>
+      <NavigationLikWrapper onClick={() => sidePanelContext.closeSidePanel()}>
         <NavigationLink to="aboutus" isActive={pathname === "aboutus"}>
           {t("navigation.aboutus")}
         </NavigationLink>

@@ -3,7 +3,8 @@ import { Link } from './Link.tsx';
 
 type NavigationLinksProps = {
   isActive?: boolean,
-  openSidePanel?: boolean
+  openSidePanel?: boolean,
+  onClick: () => void
 }
 
 export const NavigationList = styled.ul`
