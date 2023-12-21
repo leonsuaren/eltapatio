@@ -1,24 +1,35 @@
-import { type ReactNode, createContext, useContext } from "react";
+import { type ReactNode, createContext, useState } from "react";
 
-type SidePanelState = {
-  openCloseSidePanel: boolean;
-};
+// type SidePanelState = {
+//   openCloseSidePanel: boolean;
+// };
 
-type SidePanelContextValue = SidePanelState & {
-  onOpenSidePanel: () => void;
-  onCloseSidePanel: () => void;
-};
+// type SidePanelContextValue = SidePanelState & {
+//   onOpenSidePanel: () => void;
+//   onCloseSidePanel: () => void;
+// };
 
-const SidePanelContext = createContext<SidePanelContextValue | null>(null);
-
-export function useSidePanelContext() {
-  const sidePanelCtx = useContext(SidePanelContext);
-
-  if (sidePanelCtx === null) {
-    throw new Error("SidePanel Context is null");
-  }
-  return sidePanelCtx;
+type SidePanelContextValue = {
+  openSidePanel(): void;
+  closeSidePanel: () => void;
+  isSidePanelOpen: boolean;
 }
+
+// const SidePanelContext = createContext<SidePanelContextValue | null>(null);
+export const SidePanelContext = createContext<SidePanelContextValue>({
+  openSidePanel: () => {},
+  closeSidePanel: () => {},
+  isSidePanelOpen: false
+});
+
+// export function useSidePanelContext() {
+//   const sidePanelCtx = useContext(SidePanelContext);
+
+//   if (sidePanelCtx === null) {
+//     throw new Error("SidePanel Context is null");
+//   }
+//   return sidePanelCtx;
+// }
 
 type SidePanelConstextProviderProps = {
   children: ReactNode;
@@ -27,19 +38,16 @@ type SidePanelConstextProviderProps = {
 export default function SidePanelContextProvider({
   children,
 }: SidePanelConstextProviderProps) {
-  // const [sidePanelAction, setSidePanelAction] = useState<SidePanelState>({
-  //   openCloseSidePanel: false
-  // });
-  const ctx: SidePanelContextValue = {
-    openCloseSidePanel: false,
-    onOpenSidePanel() {
-      // setSidePanelAction((prevState) => {})
-    },
-    onCloseSidePanel() {},
-  };
+  const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
+
+  const openSidePanel = () => setIsSidePanelOpen(true);
+
+  const closeSidePanel = () => setIsSidePanelOpen(false);
 
   return (
-    <SidePanelContext.Provider value={ctx}>
+    <SidePanelContext.Provider value={{
+      openSidePanel, closeSidePanel, isSidePanelOpen
+    }}>
       {children}
     </SidePanelContext.Provider>
   );

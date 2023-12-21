@@ -1,6 +1,5 @@
-// import { useState } from 'react';
-
-import { useSidePanelContext } from "../../context/side-panel-context/SidePanelContext.tsx";
+import { ReactNode, useContext } from 'react';
+import { SidePanelContext } from '../../context/side-panel-context/SidePanelContext.tsx';
 import NavigationLinks from "../navigation-links/NavigationLinks.tsx";
 import {
   SidePanelWrapper,
@@ -11,18 +10,11 @@ import {
   SidePanelBody,
 } from "./styled.ts";
 
-const SidePanel = () => {
-  // const [closeSidePanel, setCloseSidePanel] = useState<boolean>(false);
-
-  // const handleOnCloseSidePanel = () => {
-  //   setCloseSidePanel((prevState) => {
-  //     return !prevState
-  //   });
-  // }
-  const sidePanelCtx = useSidePanelContext();
-
+const SidePanel = (): ReactNode => {
+  const sidePanelContext = useContext(SidePanelContext);
+ 
   return (
-    <SidePanelWrapper closeSidePanel={sidePanelCtx.openCloseSidePanel}>
+    <SidePanelWrapper closeSidePanel={sidePanelContext.isSidePanelOpen}>
       <SidePanelHeader>
         <Logo src="./logoeltapatio.png" alt="El Tapatío" />
         <SidePanelCloseButton>
