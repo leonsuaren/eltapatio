@@ -1,21 +1,11 @@
 import { type ReactNode, createContext, useState } from "react";
 
-// type SidePanelState = {
-//   openCloseSidePanel: boolean;
-// };
-
-// type SidePanelContextValue = SidePanelState & {
-//   onOpenSidePanel: () => void;
-//   onCloseSidePanel: () => void;
-// };
-
 type SidePanelContextValue = {
   openSidePanel(): void;
   closeSidePanel: () => void;
   isSidePanelOpen: boolean;
 }
 
-// const SidePanelContext = createContext<SidePanelContextValue | null>(null);
 export const SidePanelContext = createContext<SidePanelContextValue>({
   openSidePanel: () => {},
   closeSidePanel: () => {},

@@ -17,7 +17,7 @@ const SidePanel = (): ReactNode => {
     <SidePanelWrapper closeSidePanel={sidePanelContext.isSidePanelOpen}>
       <SidePanelHeader>
         <Logo src="./logoeltapatio.png" alt="El Tapatío" />
-        <SidePanelCloseButton>
+        <SidePanelCloseButton onClick={() => sidePanelContext.closeSidePanel()}>
           <SidePanelCloseButtonIcon />
         </SidePanelCloseButton>
       </SidePanelHeader>
