@@ -11,10 +11,12 @@ export const Navigation = styled.nav`
   background-color: #FFFFFF;
   padding: 5px 10px;
   margin: 0;
+  z-index: 2;
   @media(min-width: 668px) {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 100%;
+    z-index: 2;
   }
 `;
 
