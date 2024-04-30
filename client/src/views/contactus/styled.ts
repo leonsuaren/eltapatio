@@ -68,26 +68,41 @@ export const MediaIcons = styled.div`
   align-items: center;
   flex-direction: row;
   width: 100%;
-  height: 100px;
+  height: 50px;
+  @media(min-width: 668px) {
+    height: 100px;
+  }
 `;
 
 export const FaceBookIcon = styled(ImFacebook2)`
-  font-size: 3rem;
-  color: #3B5998;
-`
+    color: #3B5998;
+    font-size: 1.5rem;
+  @media(min-width: 668px) {
+    font-size: 3rem;
+  }
+`;
 
 export const InstagramIcon = styled(FaSquareInstagram)`
-  font-size: 3rem;
   color: #f09433; 
+  font-size: 1.5rem;
+  @media(min-width: 668px) {
+    font-size: 3rem;
+  }
 `;
 
 export const TikTokIcon = styled(FaTiktok)`
-  font-size: 3rem;
   color: #000000;
+  font-size: 1.5rem;
+  @media(min-width: 668px) {
+    font-size: 3rem;
+  }
 `;
 
 export const WhatsappIcon = styled(ImWhatsapp)`
-  font-size: 3rem;
   color: #25D366;
+  font-size: 1.5rem;
+  @media(min-width: 668px) {
+    font-size: 3rem;
+  }
 `;
 //MEDIA ICONS  
