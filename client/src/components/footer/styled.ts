@@ -6,7 +6,7 @@ export const FooterWrapper = styled.footer`
   align-items: center;
   justify-content: center;
   background-color: #000000;
-  position: absolute;
+  position: relative;
   width: 100%;
   padding: 50px 0px;
   bottom: 0;

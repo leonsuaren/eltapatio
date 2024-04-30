@@ -7,6 +7,7 @@ const Footer: FC = () => {
     <FooterWrapper>
       <FooterContact>
         <FooterTitles>Contact</FooterTitles>
+        <p></p>
       </FooterContact>
       <FooterSocial>
         <FooterTitles>Social</FooterTitles>
