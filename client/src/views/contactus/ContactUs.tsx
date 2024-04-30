@@ -1,6 +1,18 @@
 import BookButton from "../../components/book-button/BookButton";
 
-import { ContactLayout, BookFoodTruckButton, ContactUsFormAndImage, ContactUsForm, MediaIcons, MediaIconsButton, FaceBookIcon, InstagramIcon, TikTokIcon, WhatsappIcon } from './styled.ts';
+import { ContactLayout, 
+         BookFoodTruckButton, 
+         ContactUsFormAndImage, 
+         ContactUsForm, 
+         MediaIcons, 
+         MediaIconsButton, 
+         FaceBookIcon, 
+         InstagramIcon, 
+         TikTokIcon, 
+         WhatsappIcon, 
+         ContactUsImageSection, 
+         ContactUsFormSection 
+        } from './styled.ts';
 
 const ContactUs = () => {
   return (
@@ -10,7 +22,8 @@ const ContactUs = () => {
       </BookFoodTruckButton>
       <ContactUsFormAndImage>
         <ContactUsForm>
-          
+          <ContactUsImageSection></ContactUsImageSection>
+          <ContactUsFormSection></ContactUsFormSection>
         </ContactUsForm>
       </ContactUsFormAndImage>
       <MediaIcons>
