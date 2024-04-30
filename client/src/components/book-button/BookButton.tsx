@@ -1,10 +1,10 @@
 import { type FC } from 'react';
 
-import { BookButtonStyled } from './styled.ts';
+import { BookButtonStyled, BookButtonDeliverIcon, BookButtonDeliver } from './styled.ts';
 
 const BookButton: FC = () => {
   return (
-    <BookButtonStyled><span>Book El Tapatio FoodTruck</span></BookButtonStyled>
+    <BookButtonStyled><div><span>Book El Tapatio FoodTruck</span></div><BookButtonDeliver><BookButtonDeliverIcon /></BookButtonDeliver></BookButtonStyled>
   )
 }
 
