@@ -56,6 +56,9 @@ export const ContactUsForm = styled.div`
 
 export const ContactUsImageSection = styled.div`
   @media (min-width: 668px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
   }
 `;
