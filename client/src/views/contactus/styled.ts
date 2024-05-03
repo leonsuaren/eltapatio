@@ -55,6 +55,7 @@ export const ContactUsForm = styled.div`
 `;
 
 export const ContactUsImageSection = styled.div`
+  display: none;
   @media (min-width: 668px) {
     display: flex;
     align-items: center;
@@ -64,6 +65,11 @@ export const ContactUsImageSection = styled.div`
 `;
 
 export const ContactUsFormSection = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   @media (min-width: 668px) {
     border-radius: 10px;
     background-color: #23B2B2;

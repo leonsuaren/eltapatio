@@ -1,4 +1,5 @@
 import BookButton from "../../components/book-button/BookButton";
+import ContactForm from "../../components/contact-form/ContactForm.tsx";
 import Envelope from "../../components/envelope/Envelope.tsx";
 
 import { ContactLayout, 
@@ -26,7 +27,9 @@ const ContactUs = () => {
           <ContactUsImageSection>
             <Envelope />
           </ContactUsImageSection>
-          <ContactUsFormSection></ContactUsFormSection>
+          <ContactUsFormSection>
+            <ContactForm />
+          </ContactUsFormSection>
         </ContactUsForm>
       </ContactUsFormAndImage>
       <MediaIcons>
