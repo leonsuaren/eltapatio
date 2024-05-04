@@ -25,6 +25,7 @@ export const BookFoodTruckButton = styled.div`
     grid-area: 1 / 1 / 2 / 3;
     display: flex;
     justify-content: flex-start;
+    margin-top: 30px;
   }
 `;
 //BOOK BUTTON
