@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 
-import { ContactUsForm, ContactFormLabel, ContactFormInput, ContactFormTextArea } from './styled.ts';
+import { ContactUsForm, ContactFormLabel, ContactFormInput, ContactFormTextArea, ContactFormButtons, ContactFormSubmitButton, ContactFormCancelButton, ButtonSpan } from './styled.ts';
 
 const ContactForm: FC = () => {
   return (
@@ -18,10 +18,10 @@ const ContactForm: FC = () => {
       <ContactFormLabel>Message: 
         <ContactFormTextArea />
       </ContactFormLabel>
-      <div>
-        <button>Submit</button>
-        <button>Cancel</button>
-      </div>
+      <ContactFormButtons>
+        <ContactFormSubmitButton><ButtonSpan>Submit</ButtonSpan></ContactFormSubmitButton>
+        <ContactFormCancelButton><ButtonSpan>Cancel</ButtonSpan></ContactFormCancelButton>
+      </ContactFormButtons>
     </ContactUsForm>
   )
 }
