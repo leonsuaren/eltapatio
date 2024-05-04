@@ -10,7 +10,7 @@ export const Navigation = styled.nav`
   height: 82px;
   background-color: #FFFFFF;
   padding: 5px 10px;
-  margin: 0 0 30px 0;
+  /* margin: 0 0 30px 0; */
   z-index: 2;
   @media(min-width: 668px) {
     display: grid;

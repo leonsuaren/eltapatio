@@ -6,10 +6,11 @@ export const FooterWrapper = styled.footer`
   align-items: center;
   justify-content: center;
   background-color: #000000;
-  position: relative;
+  position: fixed;
+   left: 0;
+   bottom: 0;
   width: 100%;
   padding: 50px 0px;
-  bottom: 0;
   z-index: -1;
   @media(min-width: 668px) {
     display: grid;

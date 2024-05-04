@@ -16,4 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #515151;
     text-decoration: none;
   }
+  span {
+    font-size: 1.1rem;
+  }
 `;

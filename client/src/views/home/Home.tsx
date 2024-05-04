@@ -1,21 +1,61 @@
 import { Suspense } from "react";
 
-import { useTranslation } from 'react-i18next';
+import {
+  HomeLayout,
+  FoodTruckImage,
+  HomeBanner,
+  BannerContent,
+  BannerContentSlogan,
+  ContactUsButton,
+  OrderNowButton,
+  SloganText,
+  SloganFirstPart, 
+  SloganVacio
+} from "./styled.ts";
+
+// import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
-    <main>
-      <h1>{t('navigation.home')}</h1>
-    </main>
-  )
-}
+    <HomeLayout>
+      <HomeBanner>
+        <FoodTruckImage src="FoodTruck.png" />
+        <BannerContent>
+          <BannerContentSlogan>
+            <ContactUsButton>
+              <span>Contactanos</span>
+            </ContactUsButton>
+            <SloganText>
+              <SloganFirstPart>Si Un Día Sientes Un...</SloganFirstPart>
+              <SloganVacio>VACIO</SloganVacio>
+              <SloganFirstPart>Como Que Es Hambre!!</SloganFirstPart>
+            </SloganText>
+            <OrderNowButton>
+              <span>Order Now</span>
+            </OrderNowButton>
+          </BannerContentSlogan>
+        </BannerContent>
+      </HomeBanner>
+    </HomeLayout>
+  );
+};
+
+// const Home = () => {
+//   const { t } = useTranslation();
+
+//   return (
+//     <HomeLayout>
+//       <h1>{t('navigation.home')}</h1>
+//     </HomeLayout>
+//   )
+// }
 
 export default function WrappedHome() {
   return (
-    <Suspense fallback='Loading'>
+    <Suspense fallback="Loading">
       <Home />
     </Suspense>
-  )
+  );
 }

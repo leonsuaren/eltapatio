@@ -4,7 +4,7 @@ import { BookButtonStyled, BookButtonDeliverIcon, BookButtonDeliver } from './st
 
 const BookButton: FC = () => {
   return (
-    <BookButtonStyled><div><span>Book El Tapatio FoodTruck</span></div><BookButtonDeliver><BookButtonDeliverIcon /></BookButtonDeliver></BookButtonStyled>
+    <BookButtonStyled><div><span>Book El Tapatio</span></div><BookButtonDeliver><BookButtonDeliverIcon /></BookButtonDeliver></BookButtonStyled>
   )
 }
 
