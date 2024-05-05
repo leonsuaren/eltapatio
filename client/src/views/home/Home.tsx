@@ -9,8 +9,14 @@ import {
   ContactUsButton,
   OrderNowButton,
   SloganText,
-  SloganFirstPart, 
-  SloganVacio
+  SloganFirstPart,
+  SloganVacio,
+  BannerCards,
+  CardOne, 
+  CardTwo,
+  CardThree,
+  CardFour,
+  CardFive
 } from "./styled.ts";
 
 // import { useTranslation } from 'react-i18next';
@@ -36,6 +42,13 @@ const Home = () => {
               <span>Order Now</span>
             </OrderNowButton>
           </BannerContentSlogan>
+          <BannerCards>
+            <CardOne>One</CardOne>
+            <CardTwo>Tow</CardTwo>
+            <CardThree>Three</CardThree>
+            <CardFour>Four</CardFour>
+            <CardFive>Five</CardFive>
+          </BannerCards>
         </BannerContent>
       </HomeBanner>
     </HomeLayout>

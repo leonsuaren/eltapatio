@@ -15,13 +15,14 @@ export const FoodTruckImage = styled.img`
   opacity: .2;
 `;
 
+//BANNER CONTENT
 export const BannerContent = styled.div`
   position: absolute;
   top: 0px;
   width: 100%;
   height: 500px;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
 `;
 
 export const BannerContentSlogan = styled.div`
@@ -74,3 +75,50 @@ export const SloganVacio = styled.h1`
   color: #B51C1A;
   margin: 0;
 `;
+//BANNER CONTENT
+
+//BANNER CARDS
+export const BannerCards = styled.div`
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+`;
+
+export const CardOne = styled.div`
+  grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CardTwo = styled.div`
+  grid-area: 1 / 3 / 2 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CardThree = styled.div`
+  grid-area: 1 / 5 / 2 / 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CardFour = styled.div`
+  grid-area: 2 / 1 / 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CardFive = styled.div`
+  grid-area: 2 / 4 / 3 / 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+//BANNER CARDS
