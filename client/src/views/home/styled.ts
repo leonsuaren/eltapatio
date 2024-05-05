@@ -11,7 +11,7 @@ export const HomeBanner = styled.div`
 
 export const FoodTruckImage = styled.img`
   width: 100%;
-  height: 500px;
+  height: 560px;
   opacity: .2;
 `;
 
@@ -20,7 +20,7 @@ export const BannerContent = styled.div`
   position: absolute;
   top: 0px;
   width: 100%;
-  height: 500px;
+  height: 560px;
   display: grid;
   grid-template-columns: 30% 70%;
 `;

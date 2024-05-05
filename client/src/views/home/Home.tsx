@@ -12,12 +12,13 @@ import {
   SloganFirstPart,
   SloganVacio,
   BannerCards,
-  CardOne, 
+  CardOne,
   CardTwo,
   CardThree,
   CardFour,
-  CardFive
+  CardFive,
 } from "./styled.ts";
+import Card from "../../components/card/Card.tsx";
 
 // import { useTranslation } from 'react-i18next';
 
@@ -43,11 +44,21 @@ const Home = () => {
             </OrderNowButton>
           </BannerContentSlogan>
           <BannerCards>
-            <CardOne>One</CardOne>
-            <CardTwo>Tow</CardTwo>
-            <CardThree>Three</CardThree>
-            <CardFour>Four</CardFour>
-            <CardFive>Five</CardFive>
+            <CardOne>
+              <Card />
+            </CardOne>
+            <CardTwo>
+              <Card />
+            </CardTwo>
+            <CardThree>
+              <Card />
+            </CardThree>
+            <CardFour>
+              <Card />
+            </CardFour>
+            <CardFive>
+              <Card />
+            </CardFive>
           </BannerCards>
         </BannerContent>
       </HomeBanner>

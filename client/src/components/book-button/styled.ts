@@ -6,7 +6,7 @@ export const BookButtonStyled = styled.button`
   border-radius: 10px;
   border: none;
   background-color: #EFB83C;
-  color: white;
+  color: #FFFFFF;
   box-shadow: 5px 5px 5px #CCCCCC;
   padding: 10px;
   cursor: pointer;
