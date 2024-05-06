@@ -6,6 +6,7 @@ import {
   HomeBanner,
   BannerContent,
   BannerContentSlogan,
+  ContactUsButtonWrapper,
   ContactUsButton,
   OrderNowButton,
   SloganText,
@@ -31,9 +32,11 @@ const Home = () => {
         <FoodTruckImage src="FoodTruck.png" />
         <BannerContent>
           <BannerContentSlogan>
-            <ContactUsButton>
-              <span>Contactanos</span>
-            </ContactUsButton>
+            <ContactUsButtonWrapper>
+              <ContactUsButton>
+                <span>Contactanos</span>
+              </ContactUsButton>
+            </ContactUsButtonWrapper>
             <SloganText>
               <SloganFirstPart>Si Un Día Sientes Un...</SloganFirstPart>
               <SloganVacio>VACIO</SloganVacio>
@@ -62,6 +65,7 @@ const Home = () => {
           </BannerCards>
         </BannerContent>
       </HomeBanner>
+      <div>hola</div>
     </HomeLayout>
   );
 };

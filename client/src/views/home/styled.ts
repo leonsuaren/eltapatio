@@ -1,78 +1,115 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HomeLayout = styled.main`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 `;
 
 export const HomeBanner = styled.div`
   position: relative;
+  margin: 0 0 200px 0;
+  z-index: 0;
 `;
 
 export const FoodTruckImage = styled.img`
   width: 100%;
-  height: 560px;
-  opacity: .2;
+  height: 150px;
+  opacity: 0.2;
+  z-index: 0;
+  @media (min-width: 668px) {
+    width: 100%;
+    height: 560px;
+    opacity: 0.2;
+  }
 `;
 
 //BANNER CONTENT
 export const BannerContent = styled.div`
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0px;
-  width: 100%;
-  height: 560px;
-  display: grid;
-  grid-template-columns: 30% 70%;
+  @media (min-width: 668px) {
+    width: 100%;
+    height: 560px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
 `;
 
 export const BannerContentSlogan = styled.div`
-  display: grid;
-  grid-template-rows: 20% 60% 20%;
+  @media (min-width: 668px) {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+  }
+`;
+
+export const ContactUsButtonWrapper = styled.div`
+  width: 100%;
+  height: 150px;
+  display: flex;
+  @media (min-width: 668px) {
+    height: auto;
+    justify-content: flex-end;
+    align-items: center;
+  }
 `;
 
 export const ContactUsButton = styled.button`
-    padding: 10px;
-    color: #FFFFFF;
-    background-color: #EFB83C;
-    border: none;
-    border-radius: 10px;
+  color: #ffffff;
+  background-color: #efb83c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px #000000;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  align-self: center;
+  margin: 0 0 0 20px;
+  @media (min-width: 668px) {
     width: 200px;
     height: 50px;
-    cursor: pointer;
-    box-shadow: 3px 3px 3px #000000;
-    align-self: center;
     justify-self: flex-end;
+  }
 `;
 
 export const OrderNowButton = styled.button`
-    padding: 10px;
-    color: #FFFFFF;
-    background-color: #23B2B2;
-    border: none;
-    border-radius: 10px;
-    width: 200px;
-    height: 50px;
-    cursor: pointer;
-    box-shadow: 3px 3px 3px #000000;
-    align-self: center;
-    justify-self: flex-end;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #23b2b2;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px #000000;
+  align-self: center;
+  justify-self: flex-end;
 `;
 
 export const SloganText = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  @media (min-width: 668px) {
     align-items: flex-end;
     justify-content: center;
+  }
 `;
 
 export const SloganFirstPart = styled.h1`
-  font-size: 3.5rem;
-  margin: 0;
+font-size: 2rem;
+  @media (min-width: 668px) {
+    font-size: 3.5rem;
+    margin: 0;
+  }
 `;
 
 export const SloganVacio = styled.h1`
   font-size: 3.6rem;
-  color: #B51C1A;
+  color: #b51c1a;
   margin: 0;
 `;
 //BANNER CONTENT

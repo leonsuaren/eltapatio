@@ -24,6 +24,7 @@ export const SidePanelWrapper = styled.div<SidePanelProps>`
   border-radius: 10px;
   display: ${(props => props.closeSidePanel ? '' : 'none')};
   animation: ${sidePanelEasyOut} .4s cubic-bezier(.47,1.64,.41,.8);
+  z-index: 2;
   @media(min-width: 668px) {
     display: none;
   }
@@ -54,8 +55,8 @@ export const SidePanelCloseButtonIcon = styled(TfiClose)`
 `;
 
 export const SidePanelBody = styled.div`
-    width: auto;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
+  width: auto;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
 `;
