@@ -61,7 +61,7 @@ export const ContactUsButton = styled.button`
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 3px 3px 3px #000000;
+  box-shadow: 3px 3px 3px #7c7b7b;
   padding: 10px;
   width: 150px;
   height: 50px;
@@ -83,7 +83,7 @@ export const OrderNowButton = styled.button`
   width: 200px;
   height: 50px;
   cursor: pointer;
-  box-shadow: 3px 3px 3px #000000;
+  box-shadow: 3px 3px 3px #7c7b7b;
   align-self: center;
   justify-self: flex-end;
 `;
@@ -102,7 +102,7 @@ export const SloganText = styled.div`
 export const SloganFirstPart = styled.h1`
 font-size: 2rem;
   @media (min-width: 668px) {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin: 0;
   }
 `;

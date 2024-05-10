@@ -8,15 +8,17 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
   h1, h2, h3, h4, h5, h6, span, label {
-    font-family: caveat;
+    font-family: helvetica;
     color: #2E2E2E;
   }
   a, p, span {
-    font-family: 'caveat brush';
+    font-family: 'helvetica';
     color: #515151;
     text-decoration: none;
   }
+
   span {
-    font-size: 1.1rem;
+    color: #FFFFFF;
+    font-size: 1.01rem;
   }
 `;

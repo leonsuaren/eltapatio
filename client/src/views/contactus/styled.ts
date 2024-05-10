@@ -6,26 +6,32 @@ import { ImWhatsapp } from "react-icons/im";
 
 //MAIN LAYOUT
 export const ContactLayout = styled.main`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: fit-content(40px) fit-content(550px) fit-content(100px);
-  grid-column-gap: 0px;
-  grid-row-gap: 20px;
-  padding: 0 10px 0 10px;
-  margin: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 668px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: fit-content(40px) fit-content(550px) fit-content(100px);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    padding: 0 10px 0 10px;
+    margin: 0 0 30px 0;
+  }
 `;
 //MAIN LAYOUT
 
 //BOOK BUTTON
 export const BookFoodTruckButton = styled.div`
-  grid-area: 1 / 1 / 2 / 3;
   display: flex;
-  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
   @media (min-width: 668px) {
     grid-area: 1 / 1 / 2 / 3;
     display: flex;
     justify-content: flex-start;
-    margin-top: 30px;
+    height: 100px;
   }
 `;
 //BOOK BUTTON
@@ -33,10 +39,9 @@ export const BookFoodTruckButton = styled.div`
 //CONTACT FORM
 export const ContactUsFormAndImage = styled.div`
   grid-area: 2 / 1 / 3 / 3;
-  @media (min-width: 668px) {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ContactUsForm = styled.div`
@@ -44,8 +49,8 @@ export const ContactUsForm = styled.div`
   flex-direction: column;
   box-shadow: 5px 5px 5px #cccccc;
   border-radius: 10px;
-  width: 100%;
-  height: 400px;
+  width: 90%;
+  height: 500px;
   background-color: #ffffff;
   @media (min-width: 668px) {
     width: 70%;
@@ -66,16 +71,16 @@ export const ContactUsImageSection = styled.div`
 `;
 
 export const ContactUsFormSection = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   @media (min-width: 668px) {
     border-radius: 10px;
-    background-color: #23B2B2;
-    border-top-left-radius: 10%; 
-    border-bottom-left-radius: 10%; 
+    background-color: #23b2b2;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
   }
 `;
 //CONTACT FORM

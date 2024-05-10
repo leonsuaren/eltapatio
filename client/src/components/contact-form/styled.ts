@@ -1,25 +1,31 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ContactUsForm = styled.div`
-    @media(min-width: 668px) {
-      display: flex;
-      flex-direction: column;
-      width: 60%;
-    }
+  /* width: 100%; */
+  @media (min-width: 668px) {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
 `;
 
 export const ContactFormLabel = styled.label`
-  font-size: 1.2rem;
-  width: 100%;
+  font-size: 1rem;
+  @media (min-width: 668px) {
+    font-size: 1.2rem;
+    width: 100%;
+  }
 `;
 
 export const ContactFormInput = styled.input`
   border: none;
   border-radius: 10px;
-  height: 40px;
-  width: 100%;
-  margin: 20px 0;
   background-color: #cccccc;
+  margin: 20px 0;
+  @media (min-width: 668px) {
+    height: 40px;
+    width: 100%;
+  }
 `;
 
 export const ContactFormTextArea = styled.textarea`
@@ -39,8 +45,8 @@ export const ContactFormButtons = styled.div`
 
 export const ContactFormSubmitButton = styled.button`
   padding: 10px;
-  color: #FFFFFF;
-  background-color: #EFB83C;
+  color: #ffffff;
+  background-color: #efb83c;
   border: none;
   border-radius: 10px;
   width: 100px;
@@ -50,8 +56,8 @@ export const ContactFormSubmitButton = styled.button`
 
 export const ContactFormCancelButton = styled.button`
   padding: 10px;
-  color: #FFFFFF;
-  background-color: #B51C1A;
+  color: #ffffff;
+  background-color: #b51c1a;
   border: none;
   border-radius: 10px;
   width: 100px;
@@ -60,6 +66,6 @@ export const ContactFormCancelButton = styled.button`
 `;
 
 export const ButtonSpan = styled.span`
-  color: #FFFFFF;
-  font-size: 1.1rem
+  color: #ffffff;
+  font-size: 1.1rem;
 `;

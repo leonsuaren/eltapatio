@@ -39,7 +39,7 @@ const Home = () => {
             </ContactUsButtonWrapper>
             <SloganText>
               <SloganFirstPart>Si Un Día Sientes Un...</SloganFirstPart>
-              <SloganVacio>VACIO</SloganVacio>
+              <SloganVacio>Vacio</SloganVacio>
               <SloganFirstPart>Como Que Es Hambre!!</SloganFirstPart>
             </SloganText>
             <OrderNowButton>

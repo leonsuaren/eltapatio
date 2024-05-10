@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const CardStyled = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   width: 140px;
   height: 248px;
   background-color: #FFFFFF;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px;
+  box-shadow: 5px 5px 5px #7c7b7b;
   padding: 10px;
 `;
 
@@ -19,7 +19,7 @@ export const CardImage = styled.img`
   border-radius: 5px;
 `;
 
-export const CardTitle = styled.h2`
+export const CardTitle = styled.h4`
   margin: 0px;
 `;
 
@@ -28,17 +28,15 @@ export const CardDescription = styled.p`
 `;
 
 export const CardButton = styled.button`
-  padding: 10px;
-  color: #FFFFFF;
-  background-color: #EFB83C;
+  padding: 5px;
+  background-color: #B51C1A;
   border: none;
-  border-radius: 10px;
-  width: 120px;
-  height: 50px;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
   cursor: pointer;
-  box-shadow: 3px 3px 3px #000000;
+  box-shadow: 3px 3px 3px #7c7b7b;
   align-self: center;
   justify-self: flex-end;
   margin: 0;
-  padding: 0;
 `;
