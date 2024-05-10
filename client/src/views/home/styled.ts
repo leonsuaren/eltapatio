@@ -27,13 +27,13 @@ export const FoodTruckImage = styled.img`
 export const BannerContent = styled.div`
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0px;
   @media (min-width: 668px) {
     width: 100%;
     height: 560px;
     display: grid;
     grid-template-columns: 30% 70%;
+    position: absolute;
+    top: 0;
   }
 `;
 
@@ -45,9 +45,30 @@ export const BannerContentSlogan = styled.div`
 `;
 
 export const ContactUsButtonWrapper = styled.div`
-  width: 100%;
-  height: 150px;
-  display: flex;
+  @media (max-width: 667px) {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    position: absolute;
+    top: 0;
+  }
+  @media (min-width: 668px) {
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
+    align-items: center;
+  }
+`;
+
+export const OrderNowButtonWrapper = styled.div`
+    display: flex;
+  @media (max-width: 667px) {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   @media (min-width: 668px) {
     height: auto;
     justify-content: flex-end;
@@ -100,7 +121,7 @@ export const SloganText = styled.div`
 `;
 
 export const SloganFirstPart = styled.h1`
-font-size: 2rem;
+font-size: 1.2rem;
   @media (min-width: 668px) {
     font-size: 2.5rem;
     margin: 0;
@@ -108,9 +129,14 @@ font-size: 2rem;
 `;
 
 export const SloganVacio = styled.h1`
-  font-size: 3.6rem;
+  font-size: 2.5rem;
   color: #b51c1a;
   margin: 0;
+  font-family: caveat;
+  @media (min-width: 668px) {
+    font-size: 3.5rem;
+    margin: 0;
+  }
 `;
 //BANNER CONTENT
 

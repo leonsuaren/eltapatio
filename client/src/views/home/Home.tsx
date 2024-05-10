@@ -7,6 +7,7 @@ import {
   BannerContent,
   BannerContentSlogan,
   ContactUsButtonWrapper,
+  OrderNowButtonWrapper,
   ContactUsButton,
   OrderNowButton,
   SloganText,
@@ -42,9 +43,11 @@ const Home = () => {
               <SloganVacio>Vacio</SloganVacio>
               <SloganFirstPart>Como Que Es Hambre!!</SloganFirstPart>
             </SloganText>
-            <OrderNowButton>
-              <span>Order Now</span>
-            </OrderNowButton>
+            <OrderNowButtonWrapper>
+              <OrderNowButton>
+                <span>Order Now</span>
+              </OrderNowButton>
+            </OrderNowButtonWrapper>
           </BannerContentSlogan>
           <BannerCards>
             <CardOne>

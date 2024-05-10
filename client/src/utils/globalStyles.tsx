@@ -19,6 +19,6 @@ export const GlobalStyles = createGlobalStyle`
 
   span {
     color: #FFFFFF;
-    font-size: 1.01rem;
+    font-size: 1.1rem;
   }
 `;
