@@ -45,7 +45,7 @@ const Home = () => {
             </SloganText>
             <OrderNowButtonWrapper>
               <OrderNowButton>
-                <span>Order Now</span>
+                <span>Ordenar</span>
               </OrderNowButton>
             </OrderNowButtonWrapper>
           </BannerContentSlogan>

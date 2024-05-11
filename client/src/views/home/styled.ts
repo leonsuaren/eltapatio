@@ -61,7 +61,7 @@ export const ContactUsButtonWrapper = styled.div`
 `;
 
 export const OrderNowButtonWrapper = styled.div`
-    display: flex;
+  display: flex;
   @media (max-width: 667px) {
     width: 100%;
     height: 100px;
@@ -101,7 +101,7 @@ export const OrderNowButton = styled.button`
   background-color: #23b2b2;
   border: none;
   border-radius: 10px;
-  width: 200px;
+  width: 90%;
   height: 50px;
   cursor: pointer;
   box-shadow: 3px 3px 3px #7c7b7b;
@@ -110,10 +110,10 @@ export const OrderNowButton = styled.button`
 `;
 
 export const SloganText = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @media (min-width: 668px) {
     align-items: flex-end;
     justify-content: center;
@@ -121,7 +121,7 @@ export const SloganText = styled.div`
 `;
 
 export const SloganFirstPart = styled.h1`
-font-size: 1.2rem;
+  font-size: 1.3rem;
   @media (min-width: 668px) {
     font-size: 2.5rem;
     margin: 0;
@@ -143,45 +143,77 @@ export const SloganVacio = styled.h1`
 //BANNER CARDS
 export const BannerCards = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-row-gap: 20px;
+  @media (min-width: 668px) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
 `;
 
 export const CardOne = styled.div`
-  grid-area: 1 / 1 / 2 / 3;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 667px) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  @media (min-width: 668px) {
+    grid-area: 1 / 1 / 2 / 3;
+  }
 `;
 
 export const CardTwo = styled.div`
-  grid-area: 1 / 3 / 2 / 5;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 667px) {
+    grid-area: 1 / 2 / 2 / 2;
+  }
+  @media (min-width: 668px) {
+    grid-area: 1 / 3 / 2 / 5;
+  }
 `;
 
 export const CardThree = styled.div`
-  grid-area: 1 / 5 / 2 / 7;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 667px) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  @media (min-width: 668px) {
+    grid-area: 1 / 5 / 2 / 7;
+  }
 `;
 
 export const CardFour = styled.div`
-  grid-area: 2 / 1 / 3 / 4;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 667px) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  @media (min-width: 668px) {
+    grid-area: 2 / 1 / 3 / 4;
+  }
 `;
 
 export const CardFive = styled.div`
-  grid-area: 2 / 4 / 3 / 7;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 667px) {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  @media (min-width: 668px) {
+    grid-area: 2 / 4 / 3 / 7;
+  }
 `;
 
 //BANNER CARDS
