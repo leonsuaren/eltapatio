@@ -9,7 +9,7 @@ import AboutUs from "./views/aboutus/AboutUs.tsx";
 import ContactUs from "./views/contactus/ContactUs.tsx";
 import Menu from "./views/menu/Menu.tsx";
 import Services from "./views/services/Services.tsx";
-// import Footer from "./components/footer/Footer.tsx";
+import Footer from "./components/footer/Footer.tsx";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="contactus" element={<ContactUs />}/>
           <Route path="aboutus" element={<AboutUs />}/>
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </SidePanelContextProvider>
   );

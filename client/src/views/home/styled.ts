@@ -3,11 +3,15 @@ import styled from "styled-components";
 export const HomeLayout = styled.main`
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
+  @media (min-width: 668px) {
+    padding: 0 200px;
+  }
 `;
 
 export const HomeBanner = styled.div`
   position: relative;
-  margin: 0 0 200px 0;
+  margin: 0 0 30px 0;
   z-index: 0;
 `;
 
@@ -107,6 +111,9 @@ export const OrderNowButton = styled.button`
   box-shadow: 3px 3px 3px #7c7b7b;
   align-self: center;
   justify-self: flex-end;
+  @media (min-width: 668px) {
+    width: 200px;
+  }
 `;
 
 export const SloganText = styled.div`

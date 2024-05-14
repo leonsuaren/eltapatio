@@ -18,9 +18,10 @@ import {
   CardTwo,
   CardThree,
   CardFour,
-  CardFive,
+  CardFive
 } from "./styled.ts";
 import Card from "../../components/card/Card.tsx";
+import Events from "../../components/events/Events.tsx";
 
 // import { useTranslation } from 'react-i18next';
 
@@ -28,7 +29,7 @@ const Home = () => {
   // const { t } = useTranslation();
 
   return (
-    <HomeLayout>
+    <div>
       <HomeBanner>
         <FoodTruckImage src="FoodTruck.png" />
         <BannerContent>
@@ -68,8 +69,10 @@ const Home = () => {
           </BannerCards>
         </BannerContent>
       </HomeBanner>
-      <div>hola</div>
-    </HomeLayout>
+      <HomeLayout>
+        <Events />
+      </HomeLayout>
+    </div>
   );
 };
 

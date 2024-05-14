@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
   display: flex;
@@ -6,13 +6,14 @@ export const FooterWrapper = styled.footer`
   align-items: center;
   justify-content: center;
   background-color: #000000;
-  position: fixed;
-   left: 0;
-   bottom: 0;
+  position: relative;
+  left: 0;
+  bottom: 0;
   width: 100%;
   padding: 50px 0px;
   z-index: -1;
-  @media(min-width: 668px) {
+  margin: 50px 0 0 0;
+  @media (min-width: 668px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -22,17 +23,11 @@ export const FooterWrapper = styled.footer`
 `;
 
 export const FooterTitles = styled.h4`
- color: #A6AEB8;
+  color: #a6aeb8;
 `;
 
-export const FooterContact = styled.div`
+export const FooterContact = styled.div``;
 
-`;
+export const FooterSocial = styled.div``;
 
-export const FooterSocial = styled.div`
-
-`;
-
-export const CopyRight = styled.div`
-
-`;
+export const CopyRight = styled.div``;
