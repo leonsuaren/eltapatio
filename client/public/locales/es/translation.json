@@ -5,5 +5,8 @@
     "services": "Servicios",
     "contactus": "Contactanos",
     "aboutus": "Acerca de"
-  } 
+  },
+  "language": {
+    "switch": "English"
+  }
 }

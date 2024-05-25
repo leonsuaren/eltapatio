@@ -15,8 +15,9 @@ export const BookButtonStyled = styled.button`
   grid-template-columns: 80% 20%;
   align-items: center;
   padding: 5px;
-  /* @media(min-width: 668px) { */
-  /* } */
+
+  @media(min-width: 668px) {
+  }
 `;
 
 export const BookButtonDeliver = styled.div`

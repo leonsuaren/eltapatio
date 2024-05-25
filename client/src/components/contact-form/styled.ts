@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContactUsForm = styled.div`
-  /* width: 100%; */
   @media (min-width: 668px) {
     display: flex;
     flex-direction: column;
