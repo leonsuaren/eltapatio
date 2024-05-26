@@ -5,7 +5,7 @@ export const HomeLayout = styled.main`
   flex-direction: column;
   padding: 0 10px;
   @media (min-width: 668px) {
-    padding: 0 200px;
+    padding: 0 20px;
   }
 `;
 

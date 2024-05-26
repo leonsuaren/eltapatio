@@ -5,6 +5,7 @@ export const EventsWrapper = styled.section`
   flex-direction: column;
   background-color: #fcf9f2;
   padding-bottom: 50px;
+  margin-bottom: 20px;
 `;
 
 export const EventsTitle = styled.h1`
