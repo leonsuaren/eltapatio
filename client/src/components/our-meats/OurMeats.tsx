@@ -6,14 +6,14 @@ import MeatsCard from "../meats-card/MeatsCard.tsx";
 const OurMeats: FC = () => {
   return (
     <OurMeatsWrapper>
-      <OurMetatsTitle>Our Meats</OurMetatsTitle>
+      <OurMetatsTitle>Nuestras Carnes</OurMetatsTitle>
       <OurMeatsDivisor />
       <OurMeatsContainer>
-        <MeatsCard />
-        <MeatsCard />
-        <MeatsCard />
-        <MeatsCard />
-        <MeatsCard />
+        <MeatsCard/>
+        <MeatsCard></MeatsCard>
+        <MeatsCard></MeatsCard>
+        <MeatsCard></MeatsCard>
+        <MeatsCard></MeatsCard>
       </OurMeatsContainer>
     </OurMeatsWrapper>
   );

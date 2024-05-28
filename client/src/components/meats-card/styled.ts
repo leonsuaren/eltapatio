@@ -5,8 +5,10 @@ export const Card = styled.div`
   height: 150px;
   border-radius: 10px;
   display: flex;
-  background-color: #FFF;
+  background-color: #B51C1A;
   box-shadow: 5px 5px 5px #7c7b7b;
+  border: none;
+  cursor: pointer;
   @media (min-width: 668px) {
     width: 150px;
     height: 200px;

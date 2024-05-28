@@ -23,6 +23,7 @@ import {
 import Card from "../../components/card/Card.tsx";
 import Events from "../../components/events/Events.tsx";
 import OurMeats from "../../components/our-meats/OurMeats.tsx";
+import Promotions from "../../components/promotions/Promotions.tsx";
 
 // import { useTranslation } from 'react-i18next';
 
@@ -73,6 +74,7 @@ const Home = () => {
       <HomeLayout>
         <Events />
         <OurMeats />
+        <Promotions />
       </HomeLayout>
     </div>
   );
