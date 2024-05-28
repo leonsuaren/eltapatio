@@ -75,7 +75,7 @@ export const Promotion = styled.div`
   }
 `;
 
-export const PromotionTitle = styled.h3`
+export const PromotionTitle = styled.h2`
   font-weight: 500;
   color: #b51c1a;
   @media (min-width: 668px) {
