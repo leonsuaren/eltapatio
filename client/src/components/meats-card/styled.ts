@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Card = styled.div`
+export const Card = styled.button`
   width: 100px;
   height: 150px;
   border-radius: 10px;

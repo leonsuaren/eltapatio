@@ -12,7 +12,7 @@ export const NavigationList = styled.ul`
     align-content: center;
     justify-content: space-around;
     height: 80%;
-    width: auto;
+    width: 100%;
     flex-direction: column;
     padding: 0;
   @media(min-width: 668px) {
@@ -39,4 +39,10 @@ export const NavigationLikWrapper = styled.button`
   border: none;
   width: 100%;
   font-size: 1.1rem;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 10px;
+  &:hover {
+      background-color: #fce2ab;
+    }
 `;

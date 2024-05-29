@@ -12,15 +12,15 @@ import {
   NavigationLikWrapper,
 } from "./styled.ts";
 
-type SidePanelProps = {
-  mode: "sidePanel";
+type SidePannelProps = {
+  mode: "sidePannel";
 };
 
 type NavbarProps = {
   mode: "navbar";
 };
 
-type NavigationLinksProps = SidePanelProps | NavbarProps;
+type NavigationLinksProps = SidePannelProps | NavbarProps;
 
 function NavigationLinks(props: NavigationLinksProps) {
   const sidePanelContext = useContext(SidePanelContext);

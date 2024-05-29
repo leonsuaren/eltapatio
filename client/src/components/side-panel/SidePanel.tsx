@@ -9,6 +9,7 @@ import {
   SidePanelCloseButtonIcon,
   SidePanelBody,
 } from "./styled.ts";
+import LanguageButton from '../language-button/LanguageButton.tsx';
 
 const SidePanel = (): ReactNode => {
   const sidePanelContext = useContext(SidePanelContext);
@@ -22,7 +23,8 @@ const SidePanel = (): ReactNode => {
         </SidePanelCloseButton>
       </SidePanelHeader>
       <SidePanelBody>
-        <NavigationLinks mode='sidePanel'/>
+        <NavigationLinks mode='sidePannel'/>
+        <LanguageButton mode='sidePannel'/>
       </SidePanelBody>
     </SidePanelWrapper>
   );

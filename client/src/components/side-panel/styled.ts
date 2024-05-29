@@ -18,7 +18,7 @@ export const SidePanelWrapper = styled.div<SidePanelProps>`
   width: 90%;
   height: 100vh;
   background-color: rgba(245, 243, 243,0.9);
-  position: absolute;
+  position: fixed;
   top: 0;
   box-shadow: 5px 5px 5px;
   border-radius: 10px;

@@ -23,7 +23,7 @@ const Navbar: FC = () => {
         <NavigationLinks mode='navbar'/>
       </NavbarNavigationList>
       <LanguageButtonWraper>
-        <LanguageButton />
+        <LanguageButton mode='navbar'/>
       </LanguageButtonWraper>
     </Navigation>
   );

@@ -1,13 +1,24 @@
-import { type FC, useState } from "react";
+import { useState } from "react";
 
-import { LanguageButtonStyled } from "./styled";
+import { LanguageButtonStyled, LanguageButtonResponsiveStyled } from "./styled";
 
 import { useTranslation } from "react-i18next";
 
-const LanguageButton: FC = () => {
+type SidePannelProps = {
+  mode: "sidePannel";
+};
+
+type NavbarProps = {
+  mode: "navbar";
+};
+
+type LanguageButtonProps = SidePannelProps | NavbarProps;
+
+function LanguageButton (props: LanguageButtonProps) {
   const [languageSwitch, setLanguageSwitch] = useState<string>("en");
   const { i18n } = useTranslation();
   const { t } = useTranslation();
+  const { mode } = props;
 
 
   const currentLanguage = i18n.language;
@@ -20,13 +31,24 @@ const LanguageButton: FC = () => {
     i18n.changeLanguage(languageSwitch);
   };
 
-  return (
-    <LanguageButtonStyled
+  if (mode === 'navbar') {
+    return (
+      <LanguageButtonStyled
       onClick={() => handleOnSwitchLanguage(currentLanguage)}
-    >
+      >
       {t('language.switch')}
     </LanguageButtonStyled>
   );
-};
+}
+  if (mode === 'sidePannel') {
+    return (
+      <LanguageButtonResponsiveStyled
+      onClick={() => handleOnSwitchLanguage(currentLanguage)}
+      >
+      {t('language.switch')}
+    </LanguageButtonResponsiveStyled>
+    )
+  }
+}
 
 export default LanguageButton;

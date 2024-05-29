@@ -22,3 +22,17 @@ export const LanguageButtonStyled = styled.button`
     }
   }
 `;
+
+export const LanguageButtonResponsiveStyled = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  font-family: "helvetica";
+  font-size: 1.1rem;
+  color: #515151;
+  background-color: #fce2ab;
+  border: none;
+`;
