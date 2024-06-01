@@ -1,22 +1,52 @@
-import { type FC } from 'react';
+import { type FC } from "react";
 
-import { FooterWrapper, FooterContact, FooterSocial, CopyRight, FooterTitles } from './styled';
+import {
+  FooterWrapper,
+  FooterContact,
+  FooterSocial,
+  CopyRight,
+  FooterTitles,
+  FooterHeater,
+  ElTapatioHeader,
+  FooterSocialIcons,
+  MediaIconsButton,
+  FaceBookIcon,
+  InstagramIcon,
+  TikTokIcon,
+  WhatsappIcon
+} from "./styled";
 
 const Footer: FC = () => {
   return (
     <FooterWrapper>
+      <FooterHeater>
+        <ElTapatioHeader>El Tapatío</ElTapatioHeader>
+      </FooterHeater>
       <FooterContact>
-        <FooterTitles>Contact</FooterTitles>
+        <FooterTitles>Contacto</FooterTitles>
         <p></p>
       </FooterContact>
       <FooterSocial>
-        <FooterTitles>Social</FooterTitles>
+        <FooterSocialIcons>
+          <MediaIconsButton>
+            <FaceBookIcon />
+          </MediaIconsButton>
+          <MediaIconsButton>
+            <InstagramIcon />
+          </MediaIconsButton>
+          <MediaIconsButton>
+            <TikTokIcon />
+          </MediaIconsButton>
+          <MediaIconsButton>
+            <WhatsappIcon />
+          </MediaIconsButton>
+        </FooterSocialIcons>
       </FooterSocial>
       <CopyRight>
         <FooterTitles>Leon Suarez</FooterTitles>
       </CopyRight>
     </FooterWrapper>
-  )
-}
+  );
+};
 
 export default Footer;
