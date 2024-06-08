@@ -20,7 +20,8 @@ const Footer: FC = () => {
   return (
     <FooterWrapper>
       <FooterHeater>
-        <ElTapatioHeader>El Tapatío</ElTapatioHeader>
+        <ElTapatioHeader>
+        </ElTapatioHeader>
       </FooterHeater>
       <FooterContact>
         <FooterTitles>Contacto</FooterTitles>
