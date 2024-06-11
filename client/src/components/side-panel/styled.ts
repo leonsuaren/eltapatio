@@ -14,6 +14,20 @@ const sidePanelEasyOut = keyframes`
   }
 `;
 
+export const SidePanelBackground = styled.div<SidePanelProps>`
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  opacity: .8;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: ${(props => props.closeSidePanel ? '' : 'none')};
+  @media(min-width: 668px) {
+    display: none;
+  }
+`;
+
 export const SidePanelWrapper = styled.div<SidePanelProps>`
   width: 90%;
   height: 100vh;
