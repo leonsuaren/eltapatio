@@ -8,12 +8,21 @@ import {
   CardButton,
 } from "./Styled.ts";
 
-const Card: FC = () => {
+type CardProps = {
+  image: {
+    src: string;
+    alt: string;
+  },
+  title: string,
+  description: string
+}
+
+const Card: FC<CardProps> = ({ image, title, description }) => {
   return (
     <CardStyled>
-      <CardImage src="./Torta-Ahogada.webp" />
-      <CardTitle>Torta Ahogada</CardTitle>
-      <CardDescription>Ordenala con tu carne favorita!!</CardDescription>
+      <CardImage {...image} />
+      <CardTitle>{title}</CardTitle>
+      <CardDescription>{description}</CardDescription>
       <CardButton><span>Ordenar</span></CardButton>
     </CardStyled>
   );

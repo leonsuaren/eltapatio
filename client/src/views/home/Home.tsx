@@ -54,19 +54,19 @@ const Home = () => {
           </BannerContentSlogan>
           <BannerCards>
             <CardOne>
-              <Card />
+              <Card title='Torta Ahogada' description="La mejor del mundo!!" image={{ src: "./Torta-Ahogada.webp", alt: "Torta Ahogada" }}/>
             </CardOne>
             <CardTwo>
-              <Card />
+              <Card title='Quesadillas' description="Para todos los gustos!!" image={{ src: "./quesadillas.webp", alt: "Quesadillas" }}/>
             </CardTwo>
             <CardThree>
-              <Card />
+              <Card title="Tacos" description="Nunca pueden faltar!!" image={{ src: "./tacos.jpeg", alt: "Tacos" }}/>
             </CardThree>
             <CardFour>
-              <Card />
+              <Card title="Sopes" description="Como hechos en casa!!" image={{ src: "./sopes.jpeg", alt: "Sopes" }}/>
             </CardFour>
             <CardFive>
-              <Card />
+              <Card title="Tortas" description="No te quedes con las ganas" image={{ src: "./tortas.png", alt: "Tortas"  }}/>
             </CardFive>
           </BannerCards>
         </BannerContent>

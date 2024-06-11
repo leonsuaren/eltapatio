@@ -1,9 +1,9 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 import { TfiClose } from "react-icons/tfi";
 
 type SidePanelProps = {
-  closeSidePanel?: boolean
-}
+  closeSidePanel?: boolean;
+};
 
 const sidePanelEasyOut = keyframes`
     from{
@@ -17,13 +17,13 @@ const sidePanelEasyOut = keyframes`
 export const SidePanelBackground = styled.div<SidePanelProps>`
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
-  opacity: .8;
+  background-color: #ffffff;
+  opacity: 0.8;
   position: fixed;
   top: 0;
   z-index: 1;
-  display: ${(props => props.closeSidePanel ? '' : 'none')};
-  @media(min-width: 668px) {
+  display: ${(props) => (props.closeSidePanel ? "" : "none")};
+  @media (min-width: 668px) {
     display: none;
   }
 `;
@@ -31,15 +31,15 @@ export const SidePanelBackground = styled.div<SidePanelProps>`
 export const SidePanelWrapper = styled.div<SidePanelProps>`
   width: 90%;
   height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   box-shadow: 3px 3px 3px #7c7b7b;
   border-radius: 10px;
-  display: ${(props => props.closeSidePanel ? '' : 'none')};
-  animation: ${sidePanelEasyOut} .4s cubic-bezier(.47,1.64,.41,.8);
+  display: ${(props) => (props.closeSidePanel ? "" : "none")};
+  animation: ${sidePanelEasyOut} 0.4s cubic-bezier(0.47, 1.64, 0.41, 0.8);
   z-index: 2;
-  @media(min-width: 668px) {
+  @media (min-width: 668px) {
     display: none;
   }
 `;

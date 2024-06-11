@@ -25,6 +25,7 @@ export const CardTitle = styled.h4`
 
 export const CardDescription = styled.p`
   font-size: .9rem;
+  text-align: center;
 `;
 
 export const CardButton = styled.button`
