@@ -6,7 +6,7 @@ export const Card = styled.button`
   border-radius: 10px;
   display: flex;
   background-color: #B51C1A;
-  box-shadow: 5px 5px 5px #7c7b7b;
+  box-shadow: 3px 3px 3px #7c7b7b;
   border: none;
   cursor: pointer;
   @media (min-width: 668px) {

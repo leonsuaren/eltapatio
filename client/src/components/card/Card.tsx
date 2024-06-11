@@ -13,8 +13,8 @@ const Card: FC = () => {
     <CardStyled>
       <CardImage src="./Torta-Ahogada.webp" />
       <CardTitle>Torta Ahogada</CardTitle>
-      <CardDescription>Ordenala Con Tu Carne Favorita!!</CardDescription>
-      <CardButton><span>Ordernar</span></CardButton>
+      <CardDescription>Ordenala con tu carne favorita!!</CardDescription>
+      <CardButton><span>Ordenar</span></CardButton>
     </CardStyled>
   );
 };

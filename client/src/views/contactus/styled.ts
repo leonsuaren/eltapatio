@@ -47,7 +47,7 @@ export const ContactUsFormAndImage = styled.div`
 export const ContactUsForm = styled.div`
   display: flex;
   flex-direction: column;
-  box-shadow: 5px 5px 5px #cccccc;
+  box-shadow: 3px 3px 3px #7c7b7b;
   border-radius: 10px;
   width: 90%;
   height: 500px;
@@ -91,7 +91,7 @@ export const MediaIconsButton = styled.a`
   padding: 20px;
   border: none;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px #cccccc;
+  box-shadow: 3px 3px 3px #7c7b7b;
   background-color: #ffffff;
 `;
 

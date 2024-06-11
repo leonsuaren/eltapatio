@@ -42,9 +42,9 @@ const Home = () => {
               </ContactUsButton>
             </ContactUsButtonWrapper>
             <SloganText>
-              <SloganFirstPart>Si Un Día Sientes Un...</SloganFirstPart>
+              <SloganFirstPart>Si un día sientes un...</SloganFirstPart>
               <SloganVacio>Vacio</SloganVacio>
-              <SloganFirstPart>Como Que Es Hambre!!</SloganFirstPart>
+              <SloganFirstPart>Como que es hambre!!</SloganFirstPart>
             </SloganText>
             <OrderNowButtonWrapper>
               <OrderNowButton>

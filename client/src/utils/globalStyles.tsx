@@ -22,3 +22,8 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.1rem;
   }
 `;
+
+/*
+box-shadow: 3px 3px 3px #7c7b7b;
+color del boton de ordenar #B51C1A
+*/

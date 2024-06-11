@@ -17,10 +17,10 @@ const sidePanelEasyOut = keyframes`
 export const SidePanelWrapper = styled.div<SidePanelProps>`
   width: 90%;
   height: 100vh;
-  background-color: rgba(245, 243, 243,0.9);
+  background-color: #FFFFFF;
   position: fixed;
   top: 0;
-  box-shadow: 5px 5px 5px;
+  box-shadow: 3px 3px 3px #7c7b7b;
   border-radius: 10px;
   display: ${(props => props.closeSidePanel ? '' : 'none')};
   animation: ${sidePanelEasyOut} .4s cubic-bezier(.47,1.64,.41,.8);

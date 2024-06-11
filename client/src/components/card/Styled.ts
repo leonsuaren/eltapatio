@@ -9,7 +9,7 @@ export const CardStyled = styled.div`
   height: 248px;
   background-color: #FFFFFF;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px #7c7b7b;
+  box-shadow: 3px 3px 3px #7c7b7b;
   padding: 10px;
 `;
 

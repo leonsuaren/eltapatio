@@ -102,7 +102,7 @@ export const ContactUsButton = styled.button`
 export const OrderNowButton = styled.button`
   padding: 10px;
   color: #ffffff;
-  background-color: #23b2b2;
+  background-color: #B51C1A;
   border: none;
   border-radius: 10px;
   width: 90%;
