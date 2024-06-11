@@ -27,6 +27,8 @@ export const MenuWrapper = styled.section`
 
 export const MenuDisplay = styled.div`
   width: 80%;
+  display: flex: 
+  flex-direction: column;
 `;
 
 export const MenuTitleHolder = styled.div``;

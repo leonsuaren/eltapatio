@@ -8,6 +8,7 @@ import {
   MenuDisplay,
   MenuTitleHolder
 } from "./styled.ts";
+import Headers from "../../components/headers/Headers.tsx";
 
 const Menu: FC = () => {
   return (
@@ -17,7 +18,8 @@ const Menu: FC = () => {
       </ImageContainer>
       <MenuWrapper>
         <MenuDisplay>
-          <MenuTitleHolder  />
+          <Headers title="Desayunos"/>
+          <MenuTitleHolder>hola</MenuTitleHolder>
           <h1>hola</h1>
         </MenuDisplay>
       </MenuWrapper>
