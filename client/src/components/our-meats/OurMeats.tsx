@@ -1,16 +1,15 @@
 import { type FC } from "react";
 
-// import { GiChickenOven } from "react-icons/gi";
-
-import { OurMeatsWrapper, OurMetatsTitle, OurMeatsDivisor, OurMeatsContainer } from "./styled.ts";
-
+import  Headers  from './../headers/Headers.tsx';
 import MeatsCard from "../meats-card/MeatsCard.tsx";
+
+import { OurMeatsWrapper, OurMeatsContainer } from "./styled.ts";
+
 
 const OurMeats: FC = () => {
   return (
     <OurMeatsWrapper>
-      <OurMetatsTitle>Nuestras Carnes</OurMetatsTitle>
-      <OurMeatsDivisor />
+      <Headers title="Nuestras Carnes" />
       <OurMeatsContainer>
         <MeatsCard title="POLLO" image={{ src: "./pollo-icon.jpeg", alt: "pollo" }} />
         <MeatsCard title="CAMARON" image={{ src: "./camaron-icon.webp",  alt: "camaron" }}></MeatsCard>

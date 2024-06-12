@@ -1,9 +1,9 @@
 import { type FC } from "react";
 
+import  Headers  from './../headers/Headers.tsx';
+
 import {
   PromotionsWrapper,
-  PromotionsTitle,
-  Divisor,
   PromotionsSection,
   PromotionsImage,
   Promotion,
@@ -15,8 +15,7 @@ import {
 const Promotions: FC = () => {
   return (
     <PromotionsWrapper>
-      <PromotionsTitle>Promociones</PromotionsTitle>
-      <Divisor />
+      <Headers title="Promociones"/>
       <PromotionsSection>
         <PromotionsImage src="./comida-mexicana.webp" />
         <Promotion>

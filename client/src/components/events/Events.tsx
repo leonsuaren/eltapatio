@@ -1,9 +1,9 @@
 import { type FC } from "react";
 
+import  Headers  from './../headers/Headers.tsx';
+
 import {
   EventsWrapper,
-  EventsTitle,
-  Divisor,
   EventList,
   EventDescriptionRigth,
   EventImageRigth,
@@ -19,8 +19,7 @@ import {
 const Events: FC = () => {
   return (
     <EventsWrapper>
-      <EventsTitle>Eventos</EventsTitle>
-      <Divisor />
+      <Headers title="Eventos" />
       <EventList>
         <EventDescriptionLeft>
           <EventMonth>Mayo</EventMonth>
