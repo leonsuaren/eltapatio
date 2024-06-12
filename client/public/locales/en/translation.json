@@ -8,5 +8,16 @@
   },
   "language": {
     "switch": "Español"
+  },
+    "brand": {
+      "sloganFirst": "Are you feeling...",
+      "sloganVacio": "Empty",
+      "sloganSecond": "you are hungry!!"
+  },
+  "buttons": {
+    "contactus": "Contact Us",
+    "ordernow": "Order Now",
+    "more": "More",
+    "booking": "Book El Tapatío"
   }
 }

@@ -8,5 +8,16 @@
   },
   "language": {
     "switch": "English"
-  }
+  },
+  "brand": {
+    "sloganFirst": "Si un día sientes un...",
+    "sloganVacio": "Vacío",
+    "sloganSecond": "como que es hambre!!"
+  },
+    "buttons": {
+    "contactus": "Contactanos",
+    "ordernow": "Ordenar",
+    "more": "Ver más",
+    "booking": "Book El Tapatío"
+}
 }

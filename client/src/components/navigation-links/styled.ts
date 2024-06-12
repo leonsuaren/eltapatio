@@ -26,6 +26,8 @@ export const NavigationList = styled.ul`
 /*none if the attributes on this link are working */
 export const NavigationLink = styled(Link)<NavigationLinksProps>`
   padding: 4px 8px;
+  width: 100%;
+  height: 100%;
   display: flex;
   text-align: center;
   box-sizing: border-box;

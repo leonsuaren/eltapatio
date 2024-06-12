@@ -15,18 +15,20 @@ type NavbarProps = {
 type LanguageButtonProps = SidePannelProps | NavbarProps;
 
 function LanguageButton (props: LanguageButtonProps) {
-  const [languageSwitch, setLanguageSwitch] = useState<string>("en");
   const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  const [languageSwitch, setLanguageSwitch] = useState<string>(currentLanguage);
   const { t } = useTranslation();
   const { mode } = props;
 
 
-  const currentLanguage = i18n.language;
+  console.log(currentLanguage);
+  console.log(languageSwitch);
   const handleOnSwitchLanguage = (lang: string) => {
-    if (lang === "es") {
-      setLanguageSwitch("en");
-    } else if (lang === "en") {
+    if (lang === "en") {
       setLanguageSwitch("es");
+    } else if (lang === "es") {
+      setLanguageSwitch("en");
     }
     i18n.changeLanguage(languageSwitch);
   };

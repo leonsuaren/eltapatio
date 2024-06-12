@@ -1,5 +1,7 @@
 import { Suspense } from "react";
 
+import { useTranslation } from "react-i18next";
+
 import {
   HomeLayout,
   FoodTruckImage,
@@ -25,10 +27,8 @@ import Events from "../../components/events/Events.tsx";
 import OurMeats from "../../components/our-meats/OurMeats.tsx";
 import Promotions from "../../components/promotions/Promotions.tsx";
 
-// import { useTranslation } from 'react-i18next';
-
 const Home = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -38,17 +38,17 @@ const Home = () => {
           <BannerContentSlogan>
             <ContactUsButtonWrapper>
               <ContactUsButton>
-                <span>Contactanos</span>
+                <span>{t('buttons.contactus')}</span>
               </ContactUsButton>
             </ContactUsButtonWrapper>
             <SloganText>
-              <SloganFirstPart>Si un día sientes un...</SloganFirstPart>
-              <SloganVacio>Vacio</SloganVacio>
-              <SloganFirstPart>Como que es hambre!!</SloganFirstPart>
+              <SloganFirstPart>{t('brand.sloganFirst')}</SloganFirstPart>
+              <SloganVacio>{t('brand.sloganVacio')}</SloganVacio>
+              <SloganFirstPart>{t('brand.sloganSecond')}</SloganFirstPart>
             </SloganText>
             <OrderNowButtonWrapper>
               <OrderNowButton>
-                <span>Ordenar</span>
+                <span>{t('buttons.ordernow')}</span>
               </OrderNowButton>
             </OrderNowButtonWrapper>
           </BannerContentSlogan>
