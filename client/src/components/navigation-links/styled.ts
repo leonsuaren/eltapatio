@@ -23,7 +23,7 @@ export const NavigationList = styled.ul`
   }
 `;
 
-/*none if the attributes on this link are working */
+/*none of the attributes on this link are working */
 export const NavigationLink = styled(Link)<NavigationLinksProps>`
   padding: 4px 8px;
   width: 100%;

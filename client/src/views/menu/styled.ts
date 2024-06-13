@@ -19,17 +19,24 @@ export const HeaderImage = styled.img`
 //Menu
 export const MenuWrapper = styled.section`
   width: 100%;
-  height: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 30px 0px;
 `;
 
 export const MenuDisplay = styled.div`
   width: 80%;
-  display: flex: 
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #fcf9f2;
+  padding: 0 0 20px 0;
 `;
 
-export const MenuTitleHolder = styled.div``;
+export const MenuItemDisplay = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+`;
+
 //Menu
