@@ -1,7 +1,5 @@
 import { Suspense } from "react";
 
-import { useTranslation } from "react-i18next";
-
 import {
   HomeLayout,
   FoodTruckImage,
@@ -27,8 +25,10 @@ import Events from "../../components/events/Events.tsx";
 import OurMeats from "../../components/our-meats/OurMeats.tsx";
 import Promotions from "../../components/promotions/Promotions.tsx";
 
+// import { useTranslation } from 'react-i18next';
+
 const Home = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <div>
@@ -38,35 +38,35 @@ const Home = () => {
           <BannerContentSlogan>
             <ContactUsButtonWrapper>
               <ContactUsButton>
-                <span>{t('buttons.contactus')}</span>
+                <span>Contactanos</span>
               </ContactUsButton>
             </ContactUsButtonWrapper>
             <SloganText>
-              <SloganFirstPart>{t('brand.sloganFirst')}</SloganFirstPart>
-              <SloganVacio>{t('brand.sloganVacio')}</SloganVacio>
-              <SloganFirstPart>{t('brand.sloganSecond')}</SloganFirstPart>
+              <SloganFirstPart>Si un día sientes un...</SloganFirstPart>
+              <SloganVacio>Vacio</SloganVacio>
+              <SloganFirstPart>Como que es hambre!!</SloganFirstPart>
             </SloganText>
             <OrderNowButtonWrapper>
               <OrderNowButton>
-                <span>{t('buttons.ordernow')}</span>
+                <span>Ordenar</span>
               </OrderNowButton>
             </OrderNowButtonWrapper>
           </BannerContentSlogan>
           <BannerCards>
             <CardOne>
-              <Card title='Torta Ahogada' description="La mejor del mundo!!" image={{ src: "./Torta-Ahogada.webp", alt: "Torta Ahogada" }}/>
+              <Card type={true} title='Torta Ahogada' description="La mejor del mundo!!" image={{ src: "./Torta-Ahogada.webp", alt: "Torta Ahogada" }}/>
             </CardOne>
             <CardTwo>
-              <Card title='Quesadillas' description="Para todos los gustos!!" image={{ src: "./quesadillas.webp", alt: "Quesadillas" }}/>
+              <Card type={true} title='Quesadillas' description="Para todos los gustos!!" image={{ src: "./quesadillas.webp", alt: "Quesadillas" }}/>
             </CardTwo>
             <CardThree>
-              <Card title="Tacos" description="Nunca pueden faltar!!" image={{ src: "./tacos.jpeg", alt: "Tacos" }}/>
+              <Card type={true} title="Tacos" description="Nunca pueden faltar!!" image={{ src: "./tacos.jpeg", alt: "Tacos" }}/>
             </CardThree>
             <CardFour>
-              <Card title="Sopes" description="Como hechos en casa!!" image={{ src: "./sopes.jpeg", alt: "Sopes" }}/>
+              <Card type={true} title="Sopes" description="Como hechos en casa!!" image={{ src: "./sopes.jpeg", alt: "Sopes" }}/>
             </CardFour>
             <CardFive>
-              <Card title="Tortas" description="No te quedes con las ganas" image={{ src: "./tortas.png", alt: "Tortas"  }}/>
+              <Card type={false} title="Tortas" description="No te quedes con las ganas" image={{ src: "./tortas.jpeg", alt: "Tortas"  }}/>
             </CardFive>
           </BannerCards>
         </BannerContent>

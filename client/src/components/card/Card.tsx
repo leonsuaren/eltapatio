@@ -14,12 +14,13 @@ type CardProps = {
     alt: string;
   },
   title: string,
-  description: string
+  description: string,
+  type: boolean
 }
 
-const Card: FC<CardProps> = ({ image, title, description }) => {
+const Card: FC<CardProps> = ({ image, title, description, type }) => {
   return (
-    <CardStyled>
+    <CardStyled large={type}>
       <CardImage {...image} />
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>

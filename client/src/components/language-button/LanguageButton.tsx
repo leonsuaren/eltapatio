@@ -21,9 +21,6 @@ function LanguageButton (props: LanguageButtonProps) {
   const { t } = useTranslation();
   const { mode } = props;
 
-
-  console.log(currentLanguage);
-  console.log(languageSwitch);
   const handleOnSwitchLanguage = (lang: string) => {
     if (lang === "en") {
       setLanguageSwitch("es");

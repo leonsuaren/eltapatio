@@ -1,16 +1,35 @@
-import styled from 'styled-components';
+import styled, { css } from "styled-components";
 
-export const CardStyled = styled.div`
+type CardStyledProps = {
+  large: boolean;
+};
+
+function LargeCardStyled({ large }: CardStyledProps) {
+  if (large) {
+    return css`
+      width: 140px;
+    `;
+  } else {
+    return css`
+      width: 325px;
+    `;
+  }
+}
+
+export const CardStyled = styled.div<CardStyledProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 140px;
+  ${LargeCardStyled}
   height: 248px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 3px 3px 3px #7c7b7b;
   padding: 10px;
+  @media (min-width: 668px) {
+    width: 140px;
+  }
 `;
 
 export const CardImage = styled.img`
@@ -24,13 +43,13 @@ export const CardTitle = styled.h4`
 `;
 
 export const CardDescription = styled.p`
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: center;
 `;
 
 export const CardButton = styled.button`
   padding: 5px;
-  background-color: #B51C1A;
+  background-color: #b51c1a;
   border: none;
   border-radius: 5px;
   width: 100%;
