@@ -1,5 +1,7 @@
 import { type FC } from "react";
 
+import { useTranslation } from 'react-i18next';
+
 import  Headers  from './../headers/Headers.tsx';
 
 import {
@@ -13,9 +15,11 @@ import {
 } from "./styled.ts";
 
 const Promotions: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <PromotionsWrapper>
-      <Headers title="Promociones"/>
+      <Headers title={t('headers.promotions')}/>
       <PromotionsSection>
         <PromotionsImage src="./comida-mexicana.webp" />
         <Promotion>

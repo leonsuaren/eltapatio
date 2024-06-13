@@ -14,10 +14,15 @@
     "sloganVacio": "Vacío",
     "sloganSecond": "como que es hambre!!"
   },
-    "buttons": {
+  "buttons": {
     "contactus": "Contactanos",
     "ordernow": "Ordenar",
     "more": "Ver más",
     "booking": "Book El Tapatío"
-}
+  },
+  "headers": {
+    "events": "Eventos",
+    "ourMeats": "Nuestras Carnes",
+    "promotions": "Promociones"
+  }
 }

@@ -19,5 +19,10 @@
     "ordernow": "Order Now",
     "more": "More",
     "booking": "Book El Tapatío"
+  },
+    "headers": {
+      "events": "Events",
+      "ourMeats": "Our Meats",
+      "promotions": "Promotions"
   }
 }

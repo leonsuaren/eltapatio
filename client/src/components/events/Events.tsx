@@ -1,5 +1,7 @@
 import { type FC } from "react";
 
+import { useTranslation } from 'react-i18next';
+
 import  Headers  from './../headers/Headers.tsx';
 
 import {
@@ -16,10 +18,13 @@ import {
   EventDetailsShowButton,
 } from "./styled";
 
+
 const Events: FC = () => {
+  const {t} = useTranslation();
+
   return (
     <EventsWrapper>
-      <Headers title="Eventos" />
+      <Headers title={t('headers.events')} />
       <EventList>
         <EventDescriptionLeft>
           <EventMonth>Mayo</EventMonth>

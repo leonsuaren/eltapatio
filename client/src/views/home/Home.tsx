@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { useTranslation } from 'react-i18next';
 
 import {
   HomeLayout,
@@ -25,10 +26,9 @@ import Events from "../../components/events/Events.tsx";
 import OurMeats from "../../components/our-meats/OurMeats.tsx";
 import Promotions from "../../components/promotions/Promotions.tsx";
 
-// import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -42,9 +42,9 @@ const Home = () => {
               </ContactUsButton>
             </ContactUsButtonWrapper>
             <SloganText>
-              <SloganFirstPart>Si un día sientes un...</SloganFirstPart>
-              <SloganVacio>Vacio</SloganVacio>
-              <SloganFirstPart>Como que es hambre!!</SloganFirstPart>
+              <SloganFirstPart>{t('brand.sloganFirst')}</SloganFirstPart>
+              <SloganVacio>{t('brand.sloganVacio')}</SloganVacio>
+              <SloganFirstPart>{t('brand.sloganSecond')}</SloganFirstPart>
             </SloganText>
             <OrderNowButtonWrapper>
               <OrderNowButton>

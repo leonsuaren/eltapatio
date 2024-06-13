@@ -1,5 +1,7 @@
 import { type FC } from "react";
 
+import { useTranslation } from 'react-i18next';
+
 import  Headers  from './../headers/Headers.tsx';
 import MeatsCard from "../meats-card/MeatsCard.tsx";
 
@@ -7,9 +9,11 @@ import { OurMeatsWrapper, OurMeatsContainer } from "./styled.ts";
 
 
 const OurMeats: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <OurMeatsWrapper>
-      <Headers title="Nuestras Carnes" />
+      <Headers title={t('headers.ourMeats')} />
       <OurMeatsContainer>
         <MeatsCard title="POLLO" image={{ src: "./pollo-icon.jpeg", alt: "pollo" }} />
         <MeatsCard title="CAMARON" image={{ src: "./camaron-icon.webp",  alt: "camaron" }}></MeatsCard>
