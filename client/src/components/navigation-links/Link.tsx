@@ -1,12 +1,28 @@
-import { Link as ReactRouterDomLink } from 'react-router-dom';
-import { type PropsWithChildren } from 'react';
+import { Link as ReactRouterDomLink } from "react-router-dom";
+import { type PropsWithChildren } from "react";
+import styled from "styled-components";
 
-type NavigationLinkProps = PropsWithChildren<{ to: string, isActive: boolean }>;
+type NavigationLinkProps = PropsWithChildren<{ to: string; isActive: boolean }>;
 
-export const Link = ({  to, children }: NavigationLinkProps) => {
-  return(
-    <ReactRouterDomLink to={to}>
+const NavigationLink = styled(ReactRouterDomLink)<NavigationLinkProps>`
+  width: 100%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: ${(props) => (props.isActive ? "#fce2ab" : "")};
+  font-weight: ${(props) => (props.isActive ? "bold" : "")}};
+`;
+
+export const Link = ({ to, children, isActive }: NavigationLinkProps) => {
+  return (
+    <NavigationLink to={to} isActive={isActive}>
       {children}
-    </ReactRouterDomLink>
+    </NavigationLink>
   );
-}
+};
