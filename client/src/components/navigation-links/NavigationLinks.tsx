@@ -63,22 +63,22 @@ function NavigationLinks(props: NavigationLinksProps) {
         </Link>
       </NavigationList>
       <NavigationList onClick={() => sidePanelContext.closeSidePanel()}>
-        <Link to="menu" isActive={pathname === "menu"}>
+        <Link to="menu" isActive={pathname === "/menu"}>
           {t("navigation.menu")}
         </Link>
       </NavigationList>
       <NavigationList onClick={() => sidePanelContext.closeSidePanel()}>
-        <Link to="services" isActive={pathname === "services"}>
+        <Link to="services" isActive={pathname === "/services"}>
           {t("navigation.services")}
         </Link>
       </NavigationList>
       <NavigationList onClick={() => sidePanelContext.closeSidePanel()}>
-        <Link to="contactus" isActive={pathname === "contactus"}>
+        <Link to="contactus" isActive={pathname === "/contactus"}>
           {t("navigation.contactus")}
         </Link>
       </NavigationList>
       <NavigationList onClick={() => sidePanelContext.closeSidePanel()}>
-        <Link to="aboutus" isActive={pathname === "aboutus"}>
+        <Link to="aboutus" isActive={pathname === "/aboutus"}>
           {t("navigation.aboutus")}
         </Link>
       </NavigationList>

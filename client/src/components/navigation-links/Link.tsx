@@ -10,7 +10,6 @@ const NavigationLink = styled(ReactRouterDomLink)<NavigationLinkProps>`
   cursor: pointer;
   height: 100%;
   display: flex;
-  border-radius: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;

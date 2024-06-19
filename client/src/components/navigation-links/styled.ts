@@ -4,7 +4,7 @@ export const Navigation = styled.ul`
   display: flex;
   align-content: center;
   justify-content: space-around;
-  height: 80%;
+  height: 300px;
   width: 100%;
   flex-direction: column;
   padding: 0;
@@ -25,10 +25,12 @@ export const NavigationList = styled.li`
   font-size: 1.1rem;
   cursor: pointer;
   height: 100%;
-  margin: 1px;
-  border-radius: 10px;
+  margin: 0;
   text-decoration: none;
   list-style-type: none;
+  @media (min-width: 668px) {
+    margin: 0 1px;
+  }
   &:hover {
     background-color: #fce2ab;
   }
