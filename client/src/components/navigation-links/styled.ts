@@ -4,7 +4,7 @@ export const Navigation = styled.ul`
   display: flex;
   align-content: center;
   justify-content: space-around;
-  height: 300px;
+  height: 80%;
   width: 100%;
   flex-direction: column;
   padding: 0;

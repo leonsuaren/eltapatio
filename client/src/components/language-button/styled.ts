@@ -33,6 +33,6 @@ export const LanguageButtonResponsiveStyled = styled.button`
   font-family: "helvetica";
   font-size: 1.1rem;
   color: #515151;
-  background-color: #fce2ab;
+  background-color: #23b2b2;
   border: none;
 `;
