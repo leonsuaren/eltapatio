@@ -17,12 +17,12 @@ const SidePanel = (): ReactNode => {
 
   return (
     <div>
-      <SidePanelBackground closeSidePanel={sidePanelContext.isSidePanelOpen} onClick={() => sidePanelContext.closeSidePanel()}/>
-      <SidePanelWrapper closeSidePanel={sidePanelContext.isSidePanelOpen}>
+      <SidePanelBackground $closeSidePanel={sidePanelContext.isSidePanelOpen} onClick={() => sidePanelContext.closeOpenSidePanel()}/>
+      <SidePanelWrapper $closeSidePanel={sidePanelContext.isSidePanelOpen}>
         <SidePanelHeader>
           <Logo src="./logoeltapatio.png" alt="El Tapatío" />
           <SidePanelCloseButton
-            onClick={() => sidePanelContext.closeSidePanel()}
+            onClick={() => sidePanelContext.closeOpenSidePanel()}
           >
             <SidePanelCloseButtonIcon />
           </SidePanelCloseButton>

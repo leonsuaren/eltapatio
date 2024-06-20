@@ -2,7 +2,7 @@ import { Link as ReactRouterDomLink } from "react-router-dom";
 import { type PropsWithChildren } from "react";
 import styled from "styled-components";
 
-type NavigationLinkProps = PropsWithChildren<{ to: string; isActive: boolean }>;
+type NavigationLinkProps = PropsWithChildren<{ to: string; $isActive: boolean }>;
 
 const NavigationLink = styled(ReactRouterDomLink)<NavigationLinkProps>`
   width: 100%;
@@ -14,13 +14,13 @@ const NavigationLink = styled(ReactRouterDomLink)<NavigationLinkProps>`
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: ${(props) => (props.isActive ? "#fce2ab" : "")};
-  font-weight: ${(props) => (props.isActive ? "bold" : "")}};
+  background-color: ${(props) => (props.$isActive ? "#fce2ab" : "")};
+  font-weight: ${(props) => (props.$isActive ? "bold" : "")}};
 `;
 
-export const Link = ({ to, children, isActive }: NavigationLinkProps) => {
+export const Link = ({ to, children, $isActive }: NavigationLinkProps) => {
   return (
-    <NavigationLink to={to} isActive={isActive}>
+    <NavigationLink to={to} $isActive={$isActive}>
       {children}
     </NavigationLink>
   );

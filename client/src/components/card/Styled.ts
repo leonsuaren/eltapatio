@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
 
 type CardStyledProps = {
-  large: boolean;
+  $large: boolean;
 };
 
-function LargeCardStyled({ large }: CardStyledProps) {
-  if (large) {
+function LargeCardStyled({ $large }: CardStyledProps) {
+  if ($large) {
     return css`
       width: 140px;
     `;

@@ -1,25 +1,14 @@
 import { type ReactNode, createContext, useState } from "react";
 
 type SidePanelContextValue = {
-  openSidePanel(): void;
-  closeSidePanel: () => void;
+  closeOpenSidePanel: () => void;
   isSidePanelOpen: boolean;
 }
 
 export const SidePanelContext = createContext<SidePanelContextValue>({
-  openSidePanel: () => {},
-  closeSidePanel: () => {},
+  closeOpenSidePanel: () => {},
   isSidePanelOpen: false
 });
-
-// export function useSidePanelContext() {
-//   const sidePanelCtx = useContext(SidePanelContext);
-
-//   if (sidePanelCtx === null) {
-//     throw new Error("SidePanel Context is null");
-//   }
-//   return sidePanelCtx;
-// }
 
 type SidePanelConstextProviderProps = {
   children: ReactNode;
@@ -30,13 +19,11 @@ export default function SidePanelContextProvider({
 }: SidePanelConstextProviderProps) {
   const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
 
-  const openSidePanel = () => setIsSidePanelOpen(true);
-
-  const closeSidePanel = () => setIsSidePanelOpen(false);
+  const closeOpenSidePanel = () => setIsSidePanelOpen(s => !s);
 
   return (
     <SidePanelContext.Provider value={{
-      openSidePanel, closeSidePanel, isSidePanelOpen
+      closeOpenSidePanel, isSidePanelOpen
     }}>
       {children}
     </SidePanelContext.Provider>

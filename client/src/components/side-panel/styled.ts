@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import { TfiClose } from "react-icons/tfi";
 
 type SidePanelProps = {
-  closeSidePanel?: boolean;
+  $closeSidePanel?: boolean;
 };
 
 const sidePanelEasyOut = keyframes`
@@ -22,7 +22,7 @@ export const SidePanelBackground = styled.div<SidePanelProps>`
   position: fixed;
   top: 0;
   z-index: 1;
-  display: ${(props) => (props.closeSidePanel ? "" : "none")};
+  display: ${(props) => (props.$closeSidePanel ? "" : "none")};
   @media (min-width: 668px) {
     display: none;
   }
@@ -36,7 +36,7 @@ export const SidePanelWrapper = styled.div<SidePanelProps>`
   top: 0;
   box-shadow: 3px 3px 3px #7c7b7b;
   border-radius: 10px;
-  display: ${(props) => (props.closeSidePanel ? "" : "none")};
+  display: ${(props) => (props.$closeSidePanel ? "" : "none")};
   animation: ${sidePanelEasyOut} 0.4s cubic-bezier(0.47, 1.64, 0.41, 0.8);
   z-index: 2;
   @media (min-width: 668px) {

@@ -27,27 +27,27 @@ function NavigationLinks(props: NavigationLinksProps) {
     return (
       <Navigation>
         <NavigationList>
-          <Link to="/" isActive={pathname === "/"}>
+          <Link to="/" $isActive={pathname === "/"}>
             {t("navigation.home")}
           </Link>
         </NavigationList>
         <NavigationList>
-          <Link to="menu" isActive={pathname === "/menu"}>
+          <Link to="menu" $isActive={pathname === "/menu"}>
             {t("navigation.menu")}
           </Link>
         </NavigationList>
         <NavigationList>
-          <Link to="services" isActive={pathname === "/services"}>
+          <Link to="services" $isActive={pathname === "/services"}>
             {t("navigation.services")}
           </Link>
         </NavigationList>
         <NavigationList>
-          <Link to="contactus" isActive={pathname === "/contactus"}>
+          <Link to="contactus" $isActive={pathname === "/contactus"}>
             {t("navigation.contactus")}
           </Link>
         </NavigationList>
         <NavigationList>
-          <Link to="aboutus" isActive={pathname === "/aboutus"}>
+          <Link to="aboutus" $isActive={pathname === "/aboutus"}>
             {t("navigation.aboutus")}
           </Link>
         </NavigationList>
@@ -57,28 +57,28 @@ function NavigationLinks(props: NavigationLinksProps) {
 
   return (
     <Navigation>
-      <NavigationList onClick={() => sidePanelContext.closeSidePanel()}>
-        <Link to="/" isActive={pathname === "/"}>
+      <NavigationList onClick={() => sidePanelContext.closeOpenSidePanel()}>
+        <Link to="/" $isActive={pathname === "/"}>
           {t("navigation.home")}
         </Link>
       </NavigationList>
-      <NavigationList onClick={() => sidePanelContext.closeSidePanel()}>
-        <Link to="menu" isActive={pathname === "/menu"}>
+      <NavigationList onClick={() => sidePanelContext.closeOpenSidePanel()}>
+        <Link to="menu" $isActive={pathname === "/menu"}>
           {t("navigation.menu")}
         </Link>
       </NavigationList>
-      <NavigationList onClick={() => sidePanelContext.closeSidePanel()}>
-        <Link to="services" isActive={pathname === "/services"}>
+      <NavigationList onClick={() => sidePanelContext.closeOpenSidePanel()}>
+        <Link to="services" $isActive={pathname === "/services"}>
           {t("navigation.services")}
         </Link>
       </NavigationList>
-      <NavigationList onClick={() => sidePanelContext.closeSidePanel()}>
-        <Link to="contactus" isActive={pathname === "/contactus"}>
+      <NavigationList onClick={() => sidePanelContext.closeOpenSidePanel()}>
+        <Link to="contactus" $isActive={pathname === "/contactus"}>
           {t("navigation.contactus")}
         </Link>
       </NavigationList>
-      <NavigationList onClick={() => sidePanelContext.closeSidePanel()}>
-        <Link to="aboutus" isActive={pathname === "/aboutus"}>
+      <NavigationList onClick={() => sidePanelContext.closeOpenSidePanel()}>
+        <Link to="aboutus" $isActive={pathname === "/aboutus"}>
           {t("navigation.aboutus")}
         </Link>
       </NavigationList>

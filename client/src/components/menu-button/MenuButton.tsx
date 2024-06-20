@@ -7,7 +7,7 @@ const sidePanelContext = useContext(SidePanelContext);
 
 
 return (
-  <MenuButtonStyled onClick={() => sidePanelContext.openSidePanel()}>
+  <MenuButtonStyled onClick={() => sidePanelContext.closeOpenSidePanel()}>
     <ImgStyeld src="./kebab-menu.svg" />
   </MenuButtonStyled>
 )
