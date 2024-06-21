@@ -15,7 +15,7 @@ export const EventsTitle = styled.h1`
 export const Divisor = styled.div`
   width: 95%;
   height: 5px;
-  background-color: #23b2b2;
+  background-color: ${props => props.theme.primaryBlue};
   align-self: center;
   border-radius: 10px;
   margin: 0 0 50px 0;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const EventsWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: #fcf9f2;
+  background-color: ${props => props.theme.lightYellowBackground};
   padding-bottom: 50px;
   margin-bottom: 20px;
 `;
@@ -27,7 +27,7 @@ export const EventList = styled.div`
 export const EventDescriptionRigth = styled.div`
   width: 100%;
   height: 200px;
-  background: #efb83c;
+  background: ${props => props.theme.primaryYellow};
   padding: 20px 15px;
   box-sizing: border-box;
   display: flex;
@@ -47,7 +47,7 @@ export const EventImageRigth = styled.img`
 export const EventDescriptionLeft = styled.div`
   width: 100%;
   height: 200px;
-  background: #efb83c;
+  background: ${props => props.theme.primaryYellow};;
   padding: 20px 15px;
   box-sizing: border-box;
   display: flex;
@@ -87,7 +87,7 @@ export const EventDetailsDescription = styled.p`
 
 export const EventDetailsShowButton = styled.button`
   padding: 5px;
-  background-color: #b51c1a;
+  background-color: ${props => props.theme.primaryRed};
   border: none;
   border-radius: 5px;
   width: 80px;

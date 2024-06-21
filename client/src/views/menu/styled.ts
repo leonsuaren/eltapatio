@@ -29,7 +29,7 @@ export const MenuDisplay = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fcf9f2;
+  background-color: ${props => props.theme.lightYellowBackground};
   padding: 0 0 20px 0;
 `;
 

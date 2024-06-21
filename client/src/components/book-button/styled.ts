@@ -5,7 +5,7 @@ export const BookButtonStyled = styled.button`
   width: 100%;
   border-radius: 10px;
   border: none;
-  background-color: #EFB83C;
+  background-color: ${props => props.theme.primaryYellow};
   color: #FFFFFF;
   box-shadow: 3px 3px 3px #7c7b7b;
   padding: 10px;
@@ -21,11 +21,8 @@ export const BookButtonStyled = styled.button`
 `;
 
 export const BookButtonDeliver = styled.div`
-  /* display: none; */
   display: flex;
-  background-color: #F5F3F3;
   border-radius: 10px;
-  /* padding: 1px; */
   width: 30px;
   @media(min-width: 668px) {
   }

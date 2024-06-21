@@ -32,6 +32,6 @@ export const NavigationList = styled.li`
     margin: 0 1px;
   }
   &:hover {
-    background-color: #fce2ab;
+    background-color: ${props => props.theme.primaryYellow};
   }
 `;

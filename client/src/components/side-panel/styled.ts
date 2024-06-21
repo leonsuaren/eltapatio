@@ -17,7 +17,7 @@ const sidePanelEasyOut = keyframes`
 export const SidePanelBackground = styled.div<SidePanelProps>`
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.backgroundWhite};
   opacity: 0.8;
   position: fixed;
   top: 0;
@@ -31,7 +31,7 @@ export const SidePanelBackground = styled.div<SidePanelProps>`
 export const SidePanelWrapper = styled.div<SidePanelProps>`
   width: 90%;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.backgroundWhite};;
   position: fixed;
   top: 0;
   box-shadow: 3px 3px 3px #7c7b7b;

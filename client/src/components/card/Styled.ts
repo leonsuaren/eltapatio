@@ -49,7 +49,7 @@ export const CardDescription = styled.p`
 
 export const CardButton = styled.button`
   padding: 5px;
-  background-color: #b51c1a;
+  background-color: ${props => props.theme.primaryRed};
   border: none;
   border-radius: 5px;
   width: 100%;

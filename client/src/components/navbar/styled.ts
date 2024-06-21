@@ -8,7 +8,7 @@ export const Navigation = styled.nav`
   justify-items: center;
   width: auto;
   height: 82px;
-  background-color: #FFFFFF;
+  background-color: ${props => props.theme.backgroundWhite};
   padding: 5px 10px;
   z-index: 2;
   @media(min-width: 668px) {

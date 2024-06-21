@@ -16,9 +16,9 @@ export const LanguageButtonStyled = styled.button`
     font-family: "helvetica";
     font-size: 1.1rem;
     color: #515151;
-    border: 1px solid #fce2ab;
+    border: 1px solid ${props => props.theme.primaryYellow};
     &:hover {
-      background-color: #fce2ab;
+      background-color: ${props => props.theme.primaryYellow};
     }
   }
 `;
@@ -33,6 +33,6 @@ export const LanguageButtonResponsiveStyled = styled.button`
   font-family: "helvetica";
   font-size: 1.1rem;
   color: #515151;
-  background-color: #23b2b2;
+  background-color: ${props => props.theme.primaryYellow};
   border: none;
 `;

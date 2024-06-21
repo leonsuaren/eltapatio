@@ -82,7 +82,7 @@ export const OrderNowButtonWrapper = styled.div`
 
 export const ContactUsButton = styled.button`
   color: #ffffff;
-  background-color: #efb83c;
+  background-color: ${props => props.theme.primaryYellow};
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -102,7 +102,7 @@ export const ContactUsButton = styled.button`
 export const OrderNowButton = styled.button`
   padding: 10px;
   color: #ffffff;
-  background-color: #B51C1A;
+  background-color: ${props => props.theme.primaryRed};
   border: none;
   border-radius: 10px;
   width: 90%;
@@ -137,7 +137,7 @@ export const SloganFirstPart = styled.h1`
 
 export const SloganVacio = styled.h1`
   font-size: 2.5rem;
-  color: #b51c1a;
+  color: ${props => props.theme.primaryRed};
   margin: 0;
   font-family: caveat;
   @media (min-width: 668px) {

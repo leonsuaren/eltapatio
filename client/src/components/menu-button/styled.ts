@@ -4,7 +4,7 @@ export const MenuButtonStyled = styled.button`
   width: 50px;
   height: 50px;
   border: none;
-  background-color: #FFFFFF;
+  background-color: ${props => props.theme.backgroundWhite};
   cursor: pointer;
   transform: scale(1.1);
 `;

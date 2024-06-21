@@ -14,7 +14,7 @@ const NavigationLink = styled(ReactRouterDomLink)<NavigationLinkProps>`
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: ${(props) => (props.$isActive ? "#fce2ab" : "")};
+  background-color: ${(props) => (props.$isActive ? props.theme.currentPageYellow : "")};
   font-weight: ${(props) => (props.$isActive ? "bold" : "")}};
 `;
 

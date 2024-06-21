@@ -9,7 +9,7 @@ export const FooterWrapper = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #3a3a3a;
+  background-color: ${props => props.theme.blackBackground};
   position: relative;
   left: 0;
   bottom: 0;

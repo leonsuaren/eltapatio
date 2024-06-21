@@ -6,7 +6,7 @@ export const Card = styled.button`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  background-color: #b51c1a;
+  background-color: ${props => props.theme.primaryRed};
   box-shadow: 3px 3px 3px #7c7b7b;
   border: none;
   cursor: pointer;
@@ -23,7 +23,6 @@ export const CardIcon = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
-  color: #b51c1a;
 `;
 
 export const CardImageHolder = styled.img`

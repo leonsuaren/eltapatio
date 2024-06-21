@@ -5,9 +5,9 @@ export const PromotionsWrapper = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #fcf9f2;
+  background-color: ${props => props.theme.lightYellowBackground};
   padding-bottom: 50px;
-  margin-top: 20px;
+  margin: 20px 0;
 `;
 
 //PROMOTIONS SECTIONS
