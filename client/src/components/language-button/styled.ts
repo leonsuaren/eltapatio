@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LanguageButtonStyled = styled.button`
   display: none;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,6 @@ export const LanguageButtonStyled = styled.button`
     background-color: #fff;
     grid-column: 3 / 4;
     cursor: pointer;
-    font-family: "helvetica";
     font-size: 1.1rem;
     color: #515151;
     border: 1px solid ${props => props.theme.primaryYellow};
@@ -30,7 +29,6 @@ export const LanguageButtonResponsiveStyled = styled.button`
   width: 100%;
   height: 40px;
   cursor: pointer;
-  font-family: "helvetica";
   font-size: 1.1rem;
   color: #515151;
   background-color: ${props => props.theme.primaryYellow};

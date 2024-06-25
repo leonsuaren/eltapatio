@@ -23,7 +23,7 @@ export const SidePanelBackground = styled.div<SidePanelProps>`
   top: 0;
   z-index: 1;
   display: ${(props) => (props.$closeSidePanel ? "flex" : "none")};
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
@@ -34,13 +34,13 @@ export const SidePanelWrapper = styled.div<SidePanelProps>`
   background-color: ${props => props.theme.backgroundWhite};;
   position: fixed;
   top: 0;
-  box-shadow: 3px 3px 3px #7c7b7b;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
   border-radius: 10px;
   display: ${(props) => (props.$closeSidePanel ? "flex" : "none")};
   flex-direction: column;
   animation: ${sidePanelEasyOut} 0.4s cubic-bezier(0.47, 1.64, 0.41, 0.8);
   z-index: 2;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;

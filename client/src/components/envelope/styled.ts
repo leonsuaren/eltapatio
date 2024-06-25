@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const EnvelopeStyled = styled.div`
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     position: relative;
     margin: 50px auto 0;
     width: 98px;
@@ -39,7 +39,7 @@ export const EnvelopeStyled = styled.div`
 `;
 
 export const PaperStyled = styled.div`
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     background: #fff;
     width: 87px;
     height: 66px;

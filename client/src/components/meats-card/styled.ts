@@ -7,10 +7,10 @@ export const Card = styled.button`
   display: flex;
   flex-direction: column;
   background-color: ${props => props.theme.primaryRed};
-  box-shadow: 3px 3px 3px #7c7b7b;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
   border: none;
   cursor: pointer;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     width: 150px;
     height: 200px;
   }

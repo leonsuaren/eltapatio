@@ -15,7 +15,7 @@ export const FooterWrapper = styled.footer`
   bottom: 0;
   width: 100%;
   z-index: -1;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -87,7 +87,7 @@ export const MediaIconsButton = styled.a`
 export const FaceBookIcon = styled(ImFacebook2)`
   color: #3b5998;
   font-size: 1.5rem;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     font-size: 3rem;
   }
 `;
@@ -95,7 +95,7 @@ export const FaceBookIcon = styled(ImFacebook2)`
 export const InstagramIcon = styled(FaSquareInstagram)`
   color: #f09433;
   font-size: 1.5rem;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     font-size: 3rem;
   }
 `;
@@ -103,7 +103,7 @@ export const InstagramIcon = styled(FaSquareInstagram)`
 export const TikTokIcon = styled(FaTiktok)`
   color: #000000;
   font-size: 1.5rem;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     font-size: 3rem;
   }
 `;
@@ -111,7 +111,7 @@ export const TikTokIcon = styled(FaTiktok)`
 export const WhatsappIcon = styled(ImWhatsapp)`
   color: #25d366;
   font-size: 1.5rem;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     font-size: 3rem;
   }
 `;

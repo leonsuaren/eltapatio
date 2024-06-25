@@ -11,7 +11,7 @@ export const Navigation = styled.nav`
   background-color: ${props => props.theme.backgroundWhite};
   padding: 5px 10px;
   z-index: 2;
-  @media(min-width: 668px) {
+  @media(min-width: 768px) {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 100%;
@@ -24,14 +24,14 @@ export const Logo = styled.img`
   height: 50px;
   grid-column: 2 / 3;
 
-  @media(min-width: 668px) {
+  @media(min-width: 768px) {
     grid-column: 1 / 2;
   }
 `;
 
 export const NavbarNavigationList = styled.div`
   display: none;
-  @media(min-width: 668px) {
+  @media(min-width: 768px) {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -44,7 +44,7 @@ export const MenuButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  @media(min-width: 668px) {
+  @media(min-width: 768px) {
     display: none;
   }
 `;

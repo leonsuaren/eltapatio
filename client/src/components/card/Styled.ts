@@ -23,11 +23,11 @@ export const CardStyled = styled.div<CardStyledProps>`
   align-items: center;
   ${LargeCardStyled}
   height: 248px;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.backgroundWhite};
   border-radius: 5px;
-  box-shadow: 3px 3px 3px #7c7b7b;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
   padding: 10px;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     width: 140px;
   }
 `;
@@ -55,7 +55,7 @@ export const CardButton = styled.button`
   width: 100%;
   height: 40px;
   cursor: pointer;
-  box-shadow: 3px 3px 3px #7c7b7b;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
   align-self: center;
   justify-self: flex-end;
   margin: 0;

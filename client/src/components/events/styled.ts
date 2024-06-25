@@ -19,7 +19,7 @@ export const EventList = styled.div`
   grid-row-gap: 0px;
   align-self: center;
   justify-self: center;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     width: 50%;
   }
 `;
@@ -32,7 +32,7 @@ export const EventDescriptionRigth = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     height: 377px;
   }
 `;
@@ -40,7 +40,7 @@ export const EventDescriptionRigth = styled.div`
 export const EventImageRigth = styled.img`
   width: 100%;
   height: 200px;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     height: 377px;
   }
 `;
@@ -52,7 +52,7 @@ export const EventDescriptionLeft = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     height: 377px;
   }
 `;
@@ -60,7 +60,7 @@ export const EventDescriptionLeft = styled.div`
 export const EventImageLeft = styled.img`
   width: 100%;
   height: 200px;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     height: 377px;
   }
 `;
@@ -94,7 +94,7 @@ export const EventDetailsShowButton = styled.button`
   color: #FFFFFF;
   height: 30px;
   cursor: pointer;
-  box-shadow: 3px 3px 3px #7c7b7b;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
   align-self: flex-start;
   justify-self: flex-end;
   margin: 0;

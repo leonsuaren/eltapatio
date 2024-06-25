@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactUsForm = styled.div`
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -10,7 +10,7 @@ export const ContactUsForm = styled.div`
 
 export const ContactFormLabel = styled.label`
   font-size: 1rem;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     font-size: 1.2rem;
     width: 100%;
   }
@@ -21,7 +21,7 @@ export const ContactFormInput = styled.input`
   border-radius: 10px;
   background-color: #cccccc;
   margin: 20px 0;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     height: 40px;
     width: 100%;
   }
@@ -50,7 +50,7 @@ export const ContactFormSubmitButton = styled.button`
   border-radius: 10px;
   width: 100px;
   cursor: pointer;
-  box-shadow: 3px 3px 3px #000000;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
 `;
 
 export const ContactFormCancelButton = styled.button`
@@ -61,7 +61,7 @@ export const ContactFormCancelButton = styled.button`
   border-radius: 10px;
   width: 100px;
   cursor: pointer;
-  box-shadow: 3px 3px 3px #000000;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
 `;
 
 export const ButtonSpan = styled.span`

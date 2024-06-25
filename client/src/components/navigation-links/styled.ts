@@ -8,7 +8,7 @@ export const Navigation = styled.ul`
   width: 100%;
   flex-direction: column;
   padding: 0;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -28,7 +28,7 @@ export const NavigationList = styled.li`
   margin: 0;
   text-decoration: none;
   list-style-type: none;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     margin: 0 1px;
   }
   &:hover {

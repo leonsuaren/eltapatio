@@ -16,7 +16,7 @@ export const PromotionsSection = styled.section`
   display: flex;
   width: 100%;
   height: 300px;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     width: 50%;
     position: static;
   }
@@ -29,7 +29,7 @@ export const PromotionsImage = styled.img`
   opacity: 0.3;
   width: 100%;
   height: 100%;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     position: static;
     width: 300px;
     opacity: 1;
@@ -47,7 +47,7 @@ export const Promotion = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     position: static;
   }
 `;
@@ -55,7 +55,7 @@ export const Promotion = styled.div`
 export const PromotionTitle = styled.h2`
   font-weight: 500;
   color: #b51c1a;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     margin: 20px 0 0 50px;
   }
 `;
@@ -73,7 +73,7 @@ export const PromotionsDetailsShowButton = styled.button`
   color: #ffffff;
   height: 30px;
   cursor: pointer;
-  box-shadow: 3px 3px 3px #7c7b7b;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
   margin: 0;
 `;
 //PROMOTION

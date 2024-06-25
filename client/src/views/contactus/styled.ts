@@ -8,7 +8,7 @@ import { ImWhatsapp } from "react-icons/im";
 export const ContactLayout = styled.main`
   display: flex;
   flex-direction: column;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: fit-content(40px) fit-content(550px) fit-content(100px);
@@ -27,7 +27,7 @@ export const BookFoodTruckButton = styled.div`
   align-items: center;
   justify-content: center;
   height: 100px;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     grid-area: 1 / 1 / 2 / 3;
     display: flex;
     justify-content: flex-start;
@@ -47,12 +47,12 @@ export const ContactUsFormAndImage = styled.div`
 export const ContactUsForm = styled.div`
   display: flex;
   flex-direction: column;
-  box-shadow: 3px 3px 3px #7c7b7b;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
   border-radius: 10px;
   width: 90%;
   height: 500px;
   background-color: #ffffff;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     width: 70%;
     height: 700px;
     display: grid;
@@ -62,7 +62,7 @@ export const ContactUsForm = styled.div`
 
 export const ContactUsImageSection = styled.div`
   display: none;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@ export const ContactUsFormSection = styled.div`
   justify-content: center;
   height: 100%;
   width: 100%;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     border-radius: 10px;
     background-color: #23b2b2;
     border-top-left-radius: 10%;
@@ -91,7 +91,7 @@ export const MediaIconsButton = styled.a`
   padding: 20px;
   border: none;
   border-radius: 10px;
-  box-shadow: 3px 3px 3px #7c7b7b;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
   background-color: #ffffff;
 `;
 
@@ -103,7 +103,7 @@ export const MediaIcons = styled.div`
   flex-direction: row;
   width: 100%;
   height: 50px;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     height: 100px;
   }
 `;
@@ -111,7 +111,7 @@ export const MediaIcons = styled.div`
 export const FaceBookIcon = styled(ImFacebook2)`
   color: #3b5998;
   font-size: 1.5rem;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     font-size: 3rem;
   }
 `;
@@ -119,7 +119,7 @@ export const FaceBookIcon = styled(ImFacebook2)`
 export const InstagramIcon = styled(FaSquareInstagram)`
   color: #f09433;
   font-size: 1.5rem;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     font-size: 3rem;
   }
 `;
@@ -127,7 +127,7 @@ export const InstagramIcon = styled(FaSquareInstagram)`
 export const TikTokIcon = styled(FaTiktok)`
   color: #000000;
   font-size: 1.5rem;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     font-size: 3rem;
   }
 `;
@@ -135,7 +135,7 @@ export const TikTokIcon = styled(FaTiktok)`
 export const WhatsappIcon = styled(ImWhatsapp)`
   color: #25d366;
   font-size: 1.5rem;
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     font-size: 3rem;
   }
 `;

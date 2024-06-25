@@ -7,7 +7,7 @@ export const BookButtonStyled = styled.button`
   border: none;
   background-color: ${props => props.theme.primaryYellow};
   color: #FFFFFF;
-  box-shadow: 3px 3px 3px #7c7b7b;
+  box-shadow: ${props => props.theme.primaryBoxShadow};
   padding: 10px;
   cursor: pointer;
   width: 200px;  
@@ -16,7 +16,7 @@ export const BookButtonStyled = styled.button`
   align-items: center;
   padding: 5px;
 
-  @media(min-width: 668px) {
+  @media(min-width: 768px) {
   }
 `;
 
@@ -24,7 +24,7 @@ export const BookButtonDeliver = styled.div`
   display: flex;
   border-radius: 10px;
   width: 30px;
-  @media(min-width: 668px) {
+  @media(min-width: 768px) {
   }
 `;
 
@@ -33,7 +33,7 @@ export const BookButtonDeliverIcon = styled(CiDeliveryTruck)`
   display: flex;
   font-size: 2rem;
   color: #321C1B;
-  @media(min-width: 668px) {
+  @media(min-width: 768px) {
   }
 `;
 
