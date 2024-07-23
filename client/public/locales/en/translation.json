@@ -4,7 +4,7 @@
     "menu": "Menu",
     "services": "Services",
     "contactus": "Contact Us",
-    "aboutus": "About Us"
+    "aboutus": "About"
   },
   "language": {
     "switch": "Español"
@@ -24,5 +24,8 @@
       "events": "Events",
       "ourMeats": "Our Meats",
       "promotions": "Promotions"
-  }
+  },
+   "viewsHeaders": {
+    "about": "About"
+   }
 }

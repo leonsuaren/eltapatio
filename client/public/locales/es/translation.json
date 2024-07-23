@@ -24,5 +24,8 @@
     "events": "Eventos",
     "ourMeats": "Nuestras Carnes",
     "promotions": "Promociones"
+  },
+  "viewsHeaders": {
+   "about": "Acerca de Nosotros"
   }
 }
