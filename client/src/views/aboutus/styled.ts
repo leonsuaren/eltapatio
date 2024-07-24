@@ -76,6 +76,18 @@ export const SecondDivisor = styled.div`
   ${divisorComunStyled}
 `;
 
+export const ThirdDivisor = styled.div`
+  /* .div8 { grid-area: 5 / 3 / 7 / 4; } */
+  grid-area: 5 / 3 / 7 / 4;
+  ${divisorComunStyled}
+`;
+
+export const FourthDivisor = styled.div`
+  /* .div11 { grid-area: 7 / 3 / 9 / 4; } */
+  grid-area: 7 / 3 / 9 / 4;
+  ${divisorComunStyled}
+`;
+
 //First picture mosaic
 
 function pictureBasicStyled() {
@@ -152,3 +164,47 @@ export const PictureMosaicSeventhImage = styled.img`
   height: 100%;
 `;
 //Second picture mosaic
+
+//Text holder
+
+function textWrapper() {
+  return css`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  `;
+}
+
+export const FirstTextWrapper = styled.section`
+  /* .div3 { grid-area: 1 / 4 / 3 / 6; } */
+  grid-area: 1 / 4 / 3 / 6;
+  ${textWrapper}
+`;
+
+export const TextTitle = styled.h2``;
+
+export const TextContent = styled.p`
+  text-align: center;
+`;
+
+export const SecondTextWrapper = styled.section`
+  /* .div4 { grid-area: 3 / 1 / 5 / 3; } */
+  grid-area: 3 / 1 / 5 / 3;
+  ${textWrapper}
+`;
+
+export const ThirdTextWrapper = styled.section`
+  /* .div9 { grid-area: 5 / 4 / 7 / 6; } */
+  grid-area: 5 / 4 / 7 / 6;
+  ${textWrapper}
+`;
+
+export const FourthTextWrapper = styled.section`
+  /* .div10 { grid-area: 7 / 1 / 9 / 3; } */
+  grid-area: 7 / 1 / 9 / 3;
+  ${textWrapper}
+`;
+//Text holder
