@@ -1,11 +1,12 @@
 import { type FC } from "react";
 
+import MoreButton from "../more-button/MoreButton.tsx";
+
 import {
   CardStyled,
   CardImage,
   CardTitle,
   CardDescription,
-  CardButton,
 } from "./Styled.ts";
 
 type CardProps = {
@@ -24,7 +25,7 @@ const Card: FC<CardProps> = ({ image, title, description, type }) => {
       <CardImage {...image} />
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
-      <CardButton><span>Ver mas</span></CardButton>
+      <MoreButton moreText="buttonsText.moreButton" />
     </CardStyled>
   );
 };

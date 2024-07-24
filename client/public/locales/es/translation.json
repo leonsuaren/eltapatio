@@ -29,5 +29,8 @@
    "about": "Acerca de Nosotros",
    "contact": "Contactanos",
    "services": "Servicios"
+  },
+  "buttonsText": {
+   "moreButton": "Ver más"
   }
 }

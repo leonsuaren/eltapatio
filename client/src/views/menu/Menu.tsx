@@ -6,10 +6,11 @@ import {
   HeaderImage,
   MenuWrapper,
   MenuDisplay,
-  MenuItemDisplay,
+  MenuItemDisplay
 } from "./styled.ts";
 import Headers from "../../components/headers/Headers.tsx";
 import MenuItem from "../../components/menu-item/MenuItem.tsx";
+import MoreButton from "../../components/more-button/MoreButton.tsx";
 
 const Menu: FC = () => {
   return (
@@ -22,7 +23,7 @@ const Menu: FC = () => {
           <Headers title="Desayunos" />
           <MenuItemDisplay>
             <MenuItem
-              itemTitle="Chilaquiles"
+              itemTitle="Tacos"
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
@@ -30,7 +31,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Menudo"
@@ -41,7 +42,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Molletes"
@@ -52,7 +53,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Tamales"
@@ -63,7 +64,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
           </MenuItemDisplay>
         </MenuDisplay>
@@ -84,7 +85,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Tacos de Azada"
@@ -95,7 +96,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Tacos de Azada"
@@ -106,7 +107,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Tacos de Azada"
@@ -117,7 +118,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Tacos de Azada"
@@ -128,7 +129,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
           </MenuItemDisplay>
         </MenuDisplay>
@@ -149,7 +150,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Tacos de Azada"
@@ -160,7 +161,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Tacos de Azada"
@@ -171,7 +172,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Tacos de Azada"
@@ -182,7 +183,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
             <MenuItem
               itemTitle="Tacos de Azada"
@@ -193,7 +194,7 @@ const Menu: FC = () => {
                 alt: "tacos de azada",
               }}
             >
-              <button>Order Now</button>
+              <MoreButton moreText="buttonsText.moreButton"/>
             </MenuItem>
           </MenuItemDisplay>
         </MenuDisplay>
