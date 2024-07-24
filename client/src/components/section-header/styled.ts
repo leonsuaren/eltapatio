@@ -7,6 +7,6 @@ export const SectionHeaderStyled = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
 `;

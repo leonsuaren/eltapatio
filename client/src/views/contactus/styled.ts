@@ -11,7 +11,7 @@ export const ContactLayout = styled.main`
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  padding: 20px;
+  padding: 0 20px;
   @media (min-width: 768px) {
     display: flex;
     padding: 0 10px 0 10px;
@@ -24,7 +24,7 @@ export const ContactLayout = styled.main`
 export const BookFoodTruckButton = styled.div`
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: 100px;
   @media (min-width: 768px) {

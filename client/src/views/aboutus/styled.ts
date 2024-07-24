@@ -17,7 +17,7 @@ export const AboutUsLayout = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 20px 0px;
+  padding: 0 20px;
   @media (min-width: 768px) {
     display: grid;
     justify-items: center;
@@ -44,26 +44,38 @@ function divisorComunStyled() {
 
 export const FirstDivisor = styled.div`
   /* .div2 { grid-area: 1 / 3 / 3 / 4; } */
-  grid-area: 1 / 3 / 3 / 4;
-  ${divisorComunStyled}
+  display: none;
+  @media (min-width: 768px) {
+    grid-area: 1 / 3 / 3 / 4;
+    ${divisorComunStyled}
+  }
 `;
 
 export const SecondDivisor = styled.div`
   /* .div5 { grid-area: 3 / 3 / 5 / 4; */
-  grid-area: 3 / 3 / 5 / 4;
-  ${divisorComunStyled}
+  display: none;
+  @media (min-width: 768px) {
+    grid-area: 3 / 3 / 5 / 4;
+    ${divisorComunStyled}
+  }
 `;
 
 export const ThirdDivisor = styled.div`
   /* .div8 { grid-area: 5 / 3 / 7 / 4; } */
-  grid-area: 5 / 3 / 7 / 4;
-  ${divisorComunStyled}
+  display: none;
+  @media (min-width: 768px) {
+    grid-area: 5 / 3 / 7 / 4;
+    ${divisorComunStyled}
+  }
 `;
 
 export const FourthDivisor = styled.div`
   /* .div11 { grid-area: 7 / 3 / 9 / 4; } */
-  grid-area: 7 / 3 / 9 / 4;
-  ${divisorComunStyled}
+  display: none;
+  @media (min-width: 768px) {
+    grid-area: 7 / 3 / 9 / 4;
+    ${divisorComunStyled}
+  }
 `;
 
 //First picture mosaic
@@ -85,8 +97,10 @@ export const FirstPicturesWrapper = styled.section`
   grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  width: 450px;
-  height: 450px;
+  @media (min-width: 768px) {
+    width: 450px;
+    height: 450px;
+  }
 `;
 
 export const PictureMosaicFirstImage = styled.img`
@@ -95,17 +109,17 @@ export const PictureMosaicFirstImage = styled.img`
 `;
 
 export const PictureMosaicSecondImage = styled.img`
-  grid-area: 5 / 1 / 9 / 4;
+  grid-area: 6 / 2 / 9 / 4;
   ${pictureBasicStyled}
 `;
 
 export const PictureMosaicThirdImage = styled.img`
-  grid-area: 3 / 5 / 7 / 9;
+  grid-area: 3 / 5 / 7 / 8;
   ${pictureBasicStyled}
 `;
 
 export const PictureMosaicFourthImage = styled.img`
-  grid-area: 8 / 5 / 11 / 9;
+  grid-area: 8 / 5 / 11 / 8;
   ${pictureBasicStyled}
 `;
 
@@ -121,8 +135,10 @@ export const SecondPictureWrapper = styled.section`
   grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  width: 450px;
-  height: 450px;
+  @media (min-width: 768px) {
+    width: 450px;
+    height: 450px;
+  }
 `;
 
 export const PictureMosaicFifthImage = styled.img`
