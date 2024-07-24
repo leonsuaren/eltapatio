@@ -1,7 +1,6 @@
-import { useTranslation } from "react-i18next";
+import SectionHeader from "../../components/section-header/SectionHeader.tsx";
 
 import {
-  AboutUsHeader,
   AboutUsLayout,
   FirstPicturesWrapper,
   FirstDivisor,
@@ -25,13 +24,10 @@ import {
 } from "./styled.ts";
 
 const AboutUs = () => {
-  const { t } = useTranslation();
 
   return (
-    <main>
-      <AboutUsHeader>
-        <h1>{t("viewsHeaders.about")}</h1>
-      </AboutUsHeader>
+    <>
+      <SectionHeader translation="viewsHeaders.about" />
       <AboutUsLayout>
         <FirstPicturesWrapper>
           <PictureMosaicFirstImage src="./grouppeople.avif" />
@@ -125,7 +121,7 @@ const AboutUs = () => {
         </FourthTextWrapper>
         <FourthDivisor />
       </AboutUsLayout>
-    </main>
+    </>
   );
 };
 

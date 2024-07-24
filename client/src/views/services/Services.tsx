@@ -1,8 +1,10 @@
+import SectionHeader from "../../components/section-header/SectionHeader";
+
 const Services = () => {
   return (
-    <main>
-      <h1>Services</h1>
-    </main>
+    <>
+      <SectionHeader translation="" />
+    </>
   )
 }
 
