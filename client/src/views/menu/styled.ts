@@ -8,8 +8,10 @@ export const MenuLayout = styled.main`
 
 export const ImageContainer = styled.div`
   width: 100%;
-  height: 300px;
   overflow: hidden;
+  @media (min-width: 768px) {
+    height: 300px;
+  }
 `;
 
 export const HeaderImage = styled.img`
@@ -25,12 +27,14 @@ export const MenuWrapper = styled.section`
 `;
 
 export const MenuDisplay = styled.div`
-  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${props => props.theme.lightYellowBackground};
+  background-color: ${(props) => props.theme.lightYellowBackground};
   padding: 0 0 20px 0;
+  @media (min-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const MenuItemDisplay = styled.div`

@@ -24,7 +24,7 @@ const Card: FC<CardProps> = ({ image, title, description, type }) => {
       <CardImage {...image} />
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
-      <CardButton><span>Ordenar</span></CardButton>
+      <CardButton><span>Ver mas</span></CardButton>
     </CardStyled>
   );
 };

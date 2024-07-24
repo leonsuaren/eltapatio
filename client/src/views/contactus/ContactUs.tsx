@@ -15,7 +15,8 @@ import {
   Divisor,
   LocationWrapper,
   AddressContainer,
-  LocationMap
+  LocationMap,
+  TextContainer
 } from "./styled.ts";
 
 const ContactUs = () => {
@@ -42,23 +43,23 @@ const ContactUs = () => {
             <WhatsappIcon />
           </MediaIconsButton>
         </MediaIcons>
-        <p>
+        <TextContainer>
           Si quieres trabajar con nosotros{" "}
           <a href="/">
             <ClickHereLink>haz click aqui!</ClickHereLink>
           </a>
-        </p>
-        <p>
-          Para catering, eventos and business{" "}
+        </TextContainer>
+        <TextContainer>
+          Para eventos and business{" "}
           <a href="/">
             <ClickHereLink>haz click aqui!</ClickHereLink>
           </a>
-        </p>
+        </TextContainer>
         <Divisor />
         <LocationWrapper>
           <AddressContainer>
-            <p>Estamos ubicados en:</p>
-            <p>23420 Loveland St, Cincinnati OH</p>
+            <TextContainer>Estamos ubicados en:</TextContainer>
+            <TextContainer>23420 Loveland St, Cincinnati OH</TextContainer>
           </AddressContainer>
           <LocationMap src="./TapatioUbicacion.png"/>
         </LocationWrapper>

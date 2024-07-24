@@ -11,12 +11,9 @@ export const ContactLayout = styled.main`
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  padding: 20px;
   @media (min-width: 768px) {
     display: flex;
-    /* grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: fit-content(40px) fit-content(550px) fit-content(100px);
-    grid-column-gap: 0px;
-    grid-row-gap: 20px; */
     padding: 0 10px 0 10px;
     margin: 0 0 30px 0;
   }
@@ -119,6 +116,11 @@ export const Divisor = styled.div`
 
 //LOCATION
 export const LocationWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px 0px;
   @media (min-width: 768px) {
     width: 60%;
     height: 400px;
@@ -130,7 +132,7 @@ export const LocationWrapper = styled.div`
     align-items: center;
     justify-items: center;
   }
-  `;
+`;
 
 export const AddressContainer = styled.div`
   width: 180px;
@@ -142,3 +144,7 @@ export const LocationMap = styled.img`
 `;
 
 //LOCATION
+
+export const TextContainer = styled.p`
+  font-size: .9rem;
+`;

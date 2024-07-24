@@ -44,7 +44,7 @@ const Footer: FC = () => {
         </FooterSocialIcons>
       </FooterSocial>
       <CopyRight>
-        <FooterTitles>Leon Suarez</FooterTitles>
+        <FooterTitles>-------</FooterTitles>
       </CopyRight>
     </FooterWrapper>
   );
