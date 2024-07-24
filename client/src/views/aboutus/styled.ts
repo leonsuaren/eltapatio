@@ -33,8 +33,6 @@ export const AboutUsLayout = styled.div`
 
 function divisorComunStyled() {
   return css`
-    width: 1px;
-    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,26 +44,36 @@ export const FirstDivisor = styled.div`
   /* .div2 { grid-area: 1 / 3 / 3 / 4; } */
   display: none;
   @media (min-width: 768px) {
-    grid-area: 1 / 3 / 3 / 4;
     ${divisorComunStyled}
+    width: 1px;
+    height: 50%;
+    grid-area: 1 / 3 / 3 / 4;
   }
 `;
 
 export const SecondDivisor = styled.div`
   /* .div5 { grid-area: 3 / 3 / 5 / 4; */
-  display: none;
+  width: 50%;
+  height: 1px;
+  ${divisorComunStyled}
+  margin: 30px;
   @media (min-width: 768px) {
+    width: 1px;
+    height: 50%;
     grid-area: 3 / 3 / 5 / 4;
-    ${divisorComunStyled}
   }
 `;
 
 export const ThirdDivisor = styled.div`
   /* .div8 { grid-area: 5 / 3 / 7 / 4; } */
-  display: none;
+  width: 50%;
+  height: 1px;
+  ${divisorComunStyled}
+  margin: 30px;
   @media (min-width: 768px) {
+    width: 1px;
+    height: 50%;
     grid-area: 5 / 3 / 7 / 4;
-    ${divisorComunStyled}
   }
 `;
 

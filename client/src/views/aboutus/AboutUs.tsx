@@ -24,17 +24,10 @@ import {
 } from "./styled.ts";
 
 const AboutUs = () => {
-
   return (
     <>
       <SectionHeader translation="viewsHeaders.about" />
       <AboutUsLayout>
-        <FirstPicturesWrapper>
-          <PictureMosaicFirstImage src="./grouppeople.avif" />
-          <PictureMosaicSecondImage src="./grouppeople.avif" />
-          <PictureMosaicThirdImage src="./grouppeople.avif" />
-          <PictureMosaicFourthImage src="./grouppeopletwo.webp" />
-        </FirstPicturesWrapper>
         <FirstDivisor />
         <FirstTextWrapper>
           <TextTitle>A little bit about us!!!</TextTitle>
@@ -55,6 +48,12 @@ const AboutUs = () => {
             reprehenderit ea proident enim laborum.
           </TextContent>
         </FirstTextWrapper>
+        <FirstPicturesWrapper>
+          <PictureMosaicFirstImage src="./grouppeople.avif" />
+          <PictureMosaicSecondImage src="./grouppeople.avif" />
+          <PictureMosaicThirdImage src="./grouppeople.avif" />
+          <PictureMosaicFourthImage src="./grouppeopletwo.webp" />
+        </FirstPicturesWrapper>
         <SecondDivisor />
         <SecondTextWrapper>
           <TextTitle>What we do!!!</TextTitle>
