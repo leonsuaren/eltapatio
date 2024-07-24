@@ -26,6 +26,8 @@
     "promotions": "Promociones"
   },
   "viewsHeaders": {
-   "about": "Acerca de Nosotros"
+   "about": "Acerca de Nosotros",
+   "contact": "Contactanos",
+   "services": "Servicios"
   }
 }

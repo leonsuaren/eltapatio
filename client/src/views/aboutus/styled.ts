@@ -29,28 +29,6 @@ export const AboutUsLayout = styled.div`
     margin: auto;
     width: 80%;
   }
-  /*
-.parent {
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(8, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div1 { grid-area: 1 / 1 / 3 / 3; }
-.div2 { grid-area: 1 / 3 / 3 / 4; }
-.div3 { grid-area: 1 / 4 / 3 / 6; }
-.div4 { grid-area: 3 / 1 / 5 / 3; }
-.div5 { grid-area: 3 / 3 / 5 / 4; }
-.div6 { grid-area: 3 / 4 / 5 / 6; }
-.div7 { grid-area: 5 / 1 / 7 / 3; }
-.div8 { grid-area: 5 / 3 / 7 / 4; }
-.div9 { grid-area: 5 / 4 / 7 / 6; }
-.div10 { grid-area: 7 / 1 / 9 / 3; }
-.div11 { grid-area: 7 / 3 / 9 / 4; }
-.div12 { grid-area: 7 / 4 / 9 / 6; }
-*/
 `;
 
 function divisorComunStyled() {

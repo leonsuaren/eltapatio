@@ -3,17 +3,20 @@ import { ImFacebook2 } from "react-icons/im";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
+import { HiOutlineEnvelope } from "react-icons/hi2";
 
 //MAIN LAYOUT
 export const ContactLayout = styled.main`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-items: center;
   @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(1, 1fr);
     grid-template-rows: fit-content(40px) fit-content(550px) fit-content(100px);
     grid-column-gap: 0px;
-    grid-row-gap: 20px;
+    grid-row-gap: 20px; */
     padding: 0 10px 0 10px;
     margin: 0 0 30px 0;
   }
@@ -36,54 +39,12 @@ export const BookFoodTruckButton = styled.div`
 `;
 //BOOK BUTTON
 
-//CONTACT FORM
-export const ContactUsFormAndImage = styled.div`
-  grid-area: 2 / 1 / 3 / 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+//ENVELOPE
+export const EnvelopeIcon = styled(HiOutlineEnvelope)`
+  font-size: 8rem;
+  color: #23b2b2;
 `;
-
-export const ContactUsForm = styled.div`
-  display: flex;
-  flex-direction: column;
-  box-shadow: ${props => props.theme.primaryBoxShadow};
-  border-radius: 10px;
-  width: 90%;
-  height: 500px;
-  background-color: #ffffff;
-  @media (min-width: 768px) {
-    width: 70%;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-  }
-`;
-
-export const ContactUsImageSection = styled.div`
-  display: none;
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-  }
-`;
-
-export const ContactUsFormSection = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  @media (min-width: 768px) {
-    border-radius: 10px;
-    background-color: #23b2b2;
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
-  }
-`;
-//CONTACT FORM
+//ENVELOPE
 
 //MEDIA ICONS
 export const MediaIconsButton = styled.a`
@@ -91,7 +52,7 @@ export const MediaIconsButton = styled.a`
   padding: 20px;
   border: none;
   border-radius: 10px;
-  box-shadow: ${props => props.theme.primaryBoxShadow};
+  box-shadow: ${(props) => props.theme.primaryBoxShadow};
   background-color: #ffffff;
 `;
 
@@ -140,3 +101,44 @@ export const WhatsappIcon = styled(ImWhatsapp)`
   }
 `;
 //MEDIA ICONS
+
+//CLICK HERE
+export const ClickHereLink = styled.span`
+  font-weight: bold;
+  color: ${(props) => props.theme.primaryFontColor};
+`;
+//CLICK HERE
+
+//DIVISOR
+export const Divisor = styled.div`
+  width: 60%;
+  border: 1px solid ${(props) => props.theme.primaryFontColor};
+  margin: 50px 0;
+`;
+//DIVISOR
+
+//LOCATION
+export const LocationWrapper = styled.div`
+  @media (min-width: 768px) {
+    width: 60%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    justify-items: center;
+  }
+  `;
+
+export const AddressContainer = styled.div`
+  width: 180px;
+  height: 100px;
+`;
+
+export const LocationMap = styled.img`
+  width: 80%;
+`;
+
+//LOCATION

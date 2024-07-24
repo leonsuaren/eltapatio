@@ -3,7 +3,7 @@ import SectionHeader from "../../components/section-header/SectionHeader";
 const Services = () => {
   return (
     <>
-      <SectionHeader translation="" />
+      <SectionHeader translation="viewsHeaders.services" />
     </>
   )
 }
