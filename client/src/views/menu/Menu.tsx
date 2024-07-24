@@ -26,7 +26,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -37,7 +37,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -48,7 +48,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -59,7 +59,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -80,7 +80,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -91,7 +91,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -102,7 +102,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -113,7 +113,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -124,7 +124,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -145,7 +145,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -156,7 +156,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -167,7 +167,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -178,7 +178,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
@@ -189,7 +189,7 @@ const Menu: FC = () => {
               itemDescription="Los mejores del mundo!!"
               itemPrice={8.99}
               itemImage={{
-                src: "./platillo-tipico.webp",
+                src: "./platillo-tipico.jpeg",
                 alt: "tacos de azada",
               }}
             >
