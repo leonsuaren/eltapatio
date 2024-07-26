@@ -27,6 +27,43 @@ export const ModalStyled = styled.div`
   width: 90%;
   height: 90%;
   background: ${(props) => props.theme.lightYellowBackground};
-  box-shadow: ${props => props.theme.primaryBoxShadow};
+  box-shadow: ${(props) => props.theme.primaryBoxShadow};
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  @media (min-width: 667px) and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  @media (min-width: 768px) {
+    width: 40%;
+    height: 90%;
+  }
+`;
+
+export const ModalImage = styled.img`
+  grid-area: 1 / 1 / 4 / 7;
+  @media (min-width: 667px) and (max-width: 768px)  {
+    grid-area: 1 / 1 / 7 / 4;
+  }
+`;
+
+export const ModalItemDescription = styled.div`
+  grid-area: 4 / 1 / 9 / 7;
+  @media (min-width: 667px) and (max-width: 768px)  {
+    grid-area: 1 / 4 / 6 / 10;
+  }
+`;
+
+export const ModalCloseButton = styled.div`
+  grid-area: 9 / 1 / 10 / 7;
+  @media (min-width: 667px) and (max-width: 768px)  {
+    grid-area: 6 / 4 / 7 / 10;
+  }
 `;
