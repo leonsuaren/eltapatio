@@ -31,7 +31,7 @@ export const SidePanelBackground = styled.div<SidePanelProps>`
 export const SidePanelWrapper = styled.div<SidePanelProps>`
   width: 90%;
   height: 100vh;
-  background-color: ${props => props.theme.backgroundWhite};;
+  background-color: ${props => props.theme.backgroundWhite};
   position: fixed;
   top: 0;
   box-shadow: ${props => props.theme.primaryBoxShadow};

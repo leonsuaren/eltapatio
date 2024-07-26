@@ -1,6 +1,14 @@
 import { type FC } from "react";
 
-import { ModalBackground, ModalWrapper, ModalStyled, ModalImage, ModalItemDescription, ModalCloseButton } from "./styled.ts";
+import {
+  ModalBackground,
+  ModalWrapper,
+  ModalStyled,
+  ModalImage,
+  ModalItemDescription,
+  ModalCloseButtonWrapper,
+  ModalCloseButton,
+} from "./styled.ts";
 
 const Modal: FC = () => {
   return (
@@ -9,12 +17,10 @@ const Modal: FC = () => {
       <ModalWrapper>
         <ModalStyled>
           <ModalImage />
-          <ModalItemDescription>
-            description
-          </ModalItemDescription>
-          <ModalCloseButton>
-            <button>close</button>
-          </ModalCloseButton>
+          <ModalItemDescription>description</ModalItemDescription>
+          <ModalCloseButtonWrapper>
+            <ModalCloseButton><span>Close</span></ModalCloseButton>
+          </ModalCloseButtonWrapper>
         </ModalStyled>
       </ModalWrapper>
     </>
