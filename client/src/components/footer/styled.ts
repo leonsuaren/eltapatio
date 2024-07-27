@@ -23,7 +23,7 @@ export const FooterWrapper = styled.footer`
     grid-row-gap: 0px;
     align-items: center;
     justify-items: center;
-    z-index: 2;
+    z-index: 0;
   }
 `;
 
