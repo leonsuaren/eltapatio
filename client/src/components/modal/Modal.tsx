@@ -1,4 +1,5 @@
-import { type FC } from "react";
+import { type FC, useContext } from "react";
+import { ModalContext } from "../../context/modal-context/ModalContext.tsx"; 
 
 import {
   ModalBackground,
@@ -16,11 +17,13 @@ import {
 } from "./styled.ts";
 
 const Modal: FC = () => {
+  const modalContext = useContext(ModalContext);
+  console.log(modalContext);
   return (
     <>
-      <ModalBackground />
-      <ModalWrapper>
-        <ModalStyled>
+      <ModalBackground $closeModal={modalContext.isModalOpen}/>
+      <ModalWrapper $closeModal={modalContext.isModalOpen} >
+        <ModalStyled $closeModal={modalContext.isModalOpen}>
           <ModalImage src="./biriatacos.jpeg"/>
           <ModalItemDescription>
             <ElTapatioSlogan>
@@ -31,7 +34,7 @@ const Modal: FC = () => {
               <ItemDescription>Mollit veniam nulla nulla minim qui. Culpa cupidatat nostrud magna proident qui officia laboris elit. Culpa cupidatat nostrud</ItemDescription>
           </ModalItemDescription>
           <ModalCloseButtonWrapper>
-            <ModalCloseButton><span>Close</span></ModalCloseButton>
+            <ModalCloseButton onClick={() => modalContext.closeOpenModal()}><span>Close</span></ModalCloseButton>
           </ModalCloseButtonWrapper>
         </ModalStyled>
       </ModalWrapper>

@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const ModalBackground = styled.div`
+type modalProps = {
+  $closeModal?: boolean;
+};
+
+export const ModalBackground = styled.div<modalProps>`
+  display: ${(props) => (props.$closeModal ? "flex" : "none")};
   width: 100%;
   height: 100%;
   position: fixed;
@@ -11,19 +16,19 @@ export const ModalBackground = styled.div`
   opacity: 0.8;
 `;
 
-export const ModalWrapper = styled.div`
+export const ModalWrapper = styled.div<modalProps>`
+  display: ${(props) => (props.$closeModal ? "flex" : "none")};
   width: 100%;
   height: 100%;
   z-index: 1;
   position: fixed;
   top: 0;
   background-color: transparent;
-  display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-export const ModalStyled = styled.div`
+export const ModalStyled = styled.div<modalProps>`
   width: 90%;
   height: 90%;
   background: ${(props) => props.theme.lightYellowBackground};
@@ -57,7 +62,7 @@ export const ModalImage = styled.img`
     grid-area: 1 / 1 / 7 / 5;
   }
   @media (min-width: 768px) {
-    grid-area: 1 / 1 / 7 / 7
+    grid-area: 1 / 1 / 7 / 7;
   }
 `;
 
@@ -93,7 +98,7 @@ export const ElTapatioSlogan = styled.div`
 
 export const SloganText = styled.p`
   color: #aeafb2;
-  font-size: .7rem;
+  font-size: 0.7rem;
 `;
 
 export const ItemTitle = styled.h3`

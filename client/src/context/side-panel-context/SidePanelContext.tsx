@@ -10,13 +10,13 @@ export const SidePanelContext = createContext<SidePanelContextValue>({
   isSidePanelOpen: false
 });
 
-type SidePanelConstextProviderProps = {
+type SidePanelContextProviderProps = {
   children: ReactNode;
 };
 
 export default function SidePanelContextProvider({
   children,
-}: SidePanelConstextProviderProps) {
+}: SidePanelContextProviderProps) {
   const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
 
   const closeOpenSidePanel = () => setIsSidePanelOpen(s => !s);
