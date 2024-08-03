@@ -135,7 +135,7 @@ export const ModalCloseButton = styled.button`
   background-color: ${(props) => props.theme.primaryRed};
   border: none;
   border-radius: 5px;
-  width: 30%;
+  width: 90%;
   height: 40px;
   cursor: pointer;
   box-shadow: ${(props) => props.theme.primaryBoxShadow};

@@ -17,7 +17,7 @@ type ModalContextProviderProps = {
 export default function ModalcontextProvider({
   children,
 }: ModalContextProviderProps) {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const closeOpenModal = () => setIsModalOpen((s) => !s);
 
   return (

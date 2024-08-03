@@ -25,7 +25,7 @@ const Card: FC<CardProps> = ({ image, title, description, type }) => {
       <CardImage {...image} />
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
-      <MoreButton moreText="buttonsText.moreButton" />
+      <MoreButton moreText="buttonsText.moreButton"/>
     </CardStyled>
   );
 };

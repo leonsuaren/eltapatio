@@ -25,7 +25,7 @@ import Card from "../../components/card/Card.tsx";
 import Events from "../../components/events/Events.tsx";
 import OurMeats from "../../components/our-meats/OurMeats.tsx";
 import Promotions from "../../components/promotions/Promotions.tsx";
-import Modal from "../../components/modal/Modal.tsx";
+// import Modal from "../../components/modal/Modal.tsx";
 
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <>
-      <Modal />
+      {/* <Modal /> */}
       <HomeBanner>
         <FoodTruckImage src="FoodTruck.png" />
         <BannerContent>

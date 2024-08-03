@@ -13,6 +13,7 @@ import ContactUs from "./views/contactus/ContactUs.tsx";
 import Menu from "./views/menu/Menu.tsx";
 import Services from "./views/services/Services.tsx";
 import Footer from "./components/footer/Footer.tsx";
+import Modal from './components/modal/Modal.tsx';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <ModalcontextProvider>
         <ThemeProvider theme={theme}>
           <utils.GlobalStyles />
+          <Modal />
           <Router>
             <Navbar />
             <SidePanel />
