@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import BookButton from "../../components/book-button/BookButton";
 import SectionHeader from "../../components/section-header/SectionHeader.tsx";
 
@@ -20,6 +22,8 @@ import {
 } from "./styled.ts";
 
 const ContactUs = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <SectionHeader translation="viewsHeaders.contact" />
@@ -28,7 +32,7 @@ const ContactUs = () => {
           <BookButton />
         </BookFoodTruckButton>
         <EnvelopeIcon />
-        <p>Puedes contactarnos atravez de nuestras redes sociales!</p>
+        <p>{t('contactInfo.socialMediaInfo')}</p>
         <MediaIcons>
           <MediaIconsButton>
             <FaceBookIcon />
@@ -44,21 +48,21 @@ const ContactUs = () => {
           </MediaIconsButton>
         </MediaIcons>
         <TextContainer>
-          Si quieres trabajar con nosotros{" "}
+          {t('contactInfo.workWithUsInfo')}{" "}
           <a href="/">
-            <ClickHereLink>haz click aqui!</ClickHereLink>
+            <ClickHereLink>{t('contactInfo.clickHere')}</ClickHereLink>
           </a>
         </TextContainer>
         <TextContainer>
-          Para eventos and business{" "}
+          {t('contactInfo.eventAndBusinessInfo')}{" "}
           <a href="/">
-            <ClickHereLink>haz click aqui!</ClickHereLink>
+            <ClickHereLink>{t('contactInfo.clickHere')}</ClickHereLink>
           </a>
         </TextContainer>
         <Divisor />
         <LocationWrapper>
           <AddressContainer>
-            <TextContainer>Estamos ubicados en:</TextContainer>
+            <TextContainer>{t('contactInfo.locationInfo')}</TextContainer>
             <TextContainer>23420 Loveland St, Cincinnati OH</TextContainer>
           </AddressContainer>
           <LocationMap src="./TapatioUbicacion.png"/>

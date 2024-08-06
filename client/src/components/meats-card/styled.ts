@@ -39,4 +39,5 @@ export const CardTitle = styled.div`
   justify-content: center;
   font-size: 1rem;
   color: #FFFFFF;
+  text-transform: uppercase;
 `;

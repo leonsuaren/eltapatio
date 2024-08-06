@@ -3,6 +3,7 @@ import { type FC } from "react";
 import { BookButtonStyled, BookButtonDeliver, BookButtonDeliverImage } from "./styled.ts";
 
 const BookButton: FC = () => {
+
   return (
     <BookButtonStyled>
       <div>

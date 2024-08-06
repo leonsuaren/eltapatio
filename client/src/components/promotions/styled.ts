@@ -64,17 +64,8 @@ export const PromotionDescription = styled.h3`
   font-weight: 400;
 `;
 
-export const PromotionsDetailsShowButton = styled.button`
-  padding: 5px;
-  background-color: #b51c1a;
-  border: none;
-  border-radius: 5px;
-  width: 80px;
-  color: #ffffff;
-  height: 30px;
-  cursor: pointer;
-  box-shadow: ${props => props.theme.primaryBoxShadow};
-  margin: 0;
+export const PromotionsDetailsShowButton = styled.div`
+  width: 60%;
 `;
 //PROMOTION
 //PROMOTIONS SECTIONS

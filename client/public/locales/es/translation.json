@@ -18,19 +18,58 @@
     "contactus": "Contactanos",
     "ordernow": "Ordenar",
     "more": "Ver más",
-    "booking": "Book El Tapatío"
+    "booking": "Book El Tapatío",
+    "orderHere": "Ordernar"
   },
   "headers": {
     "events": "Eventos",
     "ourMeats": "Nuestras Carnes",
-    "promotions": "Promociones"
+    "promotions": "Promociones",
+    "breakfast": "Desayunos",
+    "lunch": "Platos Fuertes",
+    "dinner": "Cena"
   },
   "viewsHeaders": {
    "about": "Acerca de Nosotros",
    "contact": "Contactanos",
    "services": "Servicios"
   },
-  "buttonsText": {
-   "moreButton": "Ver más"
+  "events": {
+   "eventOneMonth": "Mayo",
+   "eventOneDate": "Mayo 3",
+   "eventOneDescription": "Festival de FoodTruck ",
+   "eventTwoMonth": "Junio",
+   "eventTwoDate": "Junio 3",
+   "eventTwoDescription": "Festival Local "
+  },
+  "meats": {
+    "chicken": "Pollo",
+    "shrimp": "Camaron",
+    "azada": "Azada",
+    "pastor": "Pastor",
+    "birria": "Birria"
+  },
+  "promotions": {
+    "tacoTusdayPromotion": "Todos los marter Tacos al 2 por 1"
+  },
+  "contactInfo": {
+    "socialMediaInfo": "Puedes contactarnos a travez de nuestras redes sociales",
+    "workWithUsInfo": "Si quieres trabajar con nosotros",
+    "clickHere": "click aqui",
+    "eventAndBusinessInfo": "Eventos y negocios",
+    "locationInfo": "Estabos ubicados en:"
+  },
+  "aboutUs": {
+    "aBitAboutUs": "Un poco acerca de nosotros!",
+    "whatWeDo": "Lo que hacemos!",
+    "whereWeWantToBe": "Donde queremos estar!",
+    "whatMakeUsDifferent": "Lo que nos hace diferentes!"
+  },
+  "dishPromotionPhrase": {
+    "dishPromotionPhraseOne": "Lo mejor del mundo!",
+    "dishPromotionPhraseTwo": "Para todos los gustos!",
+    "dishPromotionPhraseThree": "Nunca pueden faltar!",
+    "dishPromotionPhraseFour": "Como hechos en casa!",
+    "dishPromotionPhraseFive": "No te quedes con las ganas!"
   }
 }

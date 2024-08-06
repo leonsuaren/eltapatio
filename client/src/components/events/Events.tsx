@@ -27,28 +27,28 @@ const Events: FC = () => {
       <Headers title={t('headers.events')} />
       <EventList>
         <EventDescriptionLeft>
-          <EventMonth>Mayo</EventMonth>
+          <EventMonth>{t('events.eventOneMonth')}</EventMonth>
           <EventDetails>
-            <EventDetailsTitle>MAYO 3</EventDetailsTitle>
+            <EventDetailsTitle>{t('events.eventOneDate')}</EventDetailsTitle>
             <EventDetailsDescription>
-              Festival de FoodTrucks
+            {t('events.eventOneDescription')}
             </EventDetailsDescription>
             <EventDetailsShowButton>
-              <span>Ver más</span>
+              <span>{t('buttons.more')}</span>
             </EventDetailsShowButton>
           </EventDetails>
         </EventDescriptionLeft>
         <EventImageRigth src="./food-truck-festival.jpeg" />
         <EventImageLeft src="./foodtrucks-event-one.jpeg" />
         <EventDescriptionRigth>
-          <EventMonth>Mayo</EventMonth>
+          <EventMonth>{t('events.eventTwoMonth')}</EventMonth>
           <EventDetails>
-            <EventDetailsTitle>MAYO 5</EventDetailsTitle>
+            <EventDetailsTitle>{t('events.eventTwoDate')}</EventDetailsTitle>
             <EventDetailsDescription>
-              Festival de FoodTrucks
+            {t('events.eventTwoDescription')}
             </EventDetailsDescription>
             <EventDetailsShowButton>
-              <span>Ver más</span>
+              <span>{t('buttons.more')}</span>
             </EventDetailsShowButton>
           </EventDetails>
         </EventDescriptionRigth>

@@ -20,12 +20,13 @@ type CardProps = {
 }
 
 const Card: FC<CardProps> = ({ image, title, description, type }) => {
+
   return (
     <CardStyled $large={type}>
       <CardImage {...image} />
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
-      <MoreButton moreText="buttonsText.moreButton"/>
+      <MoreButton moreText="buttons.more"/>
     </CardStyled>
   );
 };

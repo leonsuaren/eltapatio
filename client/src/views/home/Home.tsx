@@ -25,7 +25,6 @@ import Card from "../../components/card/Card.tsx";
 import Events from "../../components/events/Events.tsx";
 import OurMeats from "../../components/our-meats/OurMeats.tsx";
 import Promotions from "../../components/promotions/Promotions.tsx";
-// import Modal from "../../components/modal/Modal.tsx";
 
 
 const Home = () => {
@@ -33,14 +32,13 @@ const Home = () => {
 
   return (
     <>
-      {/* <Modal /> */}
       <HomeBanner>
         <FoodTruckImage src="FoodTruck.png" />
         <BannerContent>
           <BannerContentSlogan>
             <ContactUsButtonWrapper>
               <ContactUsButton>
-                <span>Contactanos</span>
+                <span>{t('navigation.contactus')}</span>
               </ContactUsButton>
             </ContactUsButtonWrapper>
             <SloganText>
@@ -49,26 +47,26 @@ const Home = () => {
               <SloganFirstPart>{t('brand.sloganSecond')}</SloganFirstPart>
             </SloganText>
             <OrderNowButtonWrapper>
-              <OrderNowButton>
-                <span>Ordenar</span>
+              <OrderNowButton disabled>
+                <span>{t('buttons.orderHere')}</span>
               </OrderNowButton>
             </OrderNowButtonWrapper>
           </BannerContentSlogan>
           <BannerCards>
             <CardOne>
-              <Card type={true} title='Torta Ahogada' description="La mejor del mundo!!" image={{ src: "./Torta-Ahogada.webp", alt: "Torta Ahogada" }}/>
+              <Card type={true} title='Torta Ahogada' description={t('dishPromotionPhrase.dishPromotionPhraseOne')} image={{ src: "./Torta-Ahogada.webp", alt: "Torta Ahogada" }}/>
             </CardOne>
             <CardTwo>
-              <Card type={true} title='Quesadillas' description="Para todos los gustos!!" image={{ src: "./quesadillas.webp", alt: "Quesadillas" }}/>
+              <Card type={true} title='Quesadillas' description={t('dishPromotionPhrase.dishPromotionPhraseTwo')} image={{ src: "./quesadillas.webp", alt: "Quesadillas" }}/>
             </CardTwo>
             <CardThree>
-              <Card type={true} title="Tacos" description="Nunca pueden faltar!!" image={{ src: "./tacos.jpeg", alt: "Tacos" }}/>
+              <Card type={true} title="Tacos" description={t('dishPromotionPhrase.dishPromotionPhraseThree')} image={{ src: "./tacos.jpeg", alt: "Tacos" }}/>
             </CardThree>
             <CardFour>
-              <Card type={true} title="Sopes" description="Como hechos en casa!!" image={{ src: "./sopes.jpeg", alt: "Sopes" }}/>
+              <Card type={true} title="Sopes" description={t('dishPromotionPhrase.dishPromotionPhraseFour')} image={{ src: "./sopes.jpeg", alt: "Sopes" }}/>
             </CardFour>
             <CardFive>
-              <Card type={false} title="Tortas" description="No te quedes con las ganas" image={{ src: "./tortas.jpeg", alt: "Tortas"  }}/>
+              <Card type={false} title="Tortas" description={t('dishPromotionPhrase.dishPromotionPhraseFive')} image={{ src: "./tortas.jpeg", alt: "Tortas"  }}/>
             </CardFive>
           </BannerCards>
         </BannerContent>
@@ -81,16 +79,6 @@ const Home = () => {
     </>
   );
 };
-
-// const Home = () => {
-//   const { t } = useTranslation();
-
-//   return (
-//     <HomeLayout>
-//       <h1>{t('navigation.home')}</h1>
-//     </HomeLayout>
-//   )
-// }
 
 export default function WrappedHome() {
   return (

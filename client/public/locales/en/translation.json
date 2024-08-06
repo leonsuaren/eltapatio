@@ -18,19 +18,58 @@
     "contactus": "Contact Us",
     "ordernow": "Order Now",
     "more": "More",
-    "booking": "Book El Tapatío"
+    "booking": "Book El Tapatío",
+    "orderHere": "Order Here"
   },
     "headers": {
       "events": "Events",
       "ourMeats": "Our Meats",
-      "promotions": "Promotions"
+      "promotions": "Promotions",
+      "breakfast": "Breakfast",
+      "lunch": "Lunch",
+      "dinner": "Dinner"
   },
    "viewsHeaders": {
     "about": "About",
     "contact": "Contact Us",
     "services": "Our Services"
    },
-   "buttonsText": {
-    "moreButton": "More"
-   }
+   "events": {
+    "eventOneMonth": "May",
+    "eventOneDate": "May 3th",
+    "eventOneDescription": "FoodTruck Festival",
+    "eventTwoMonth": "June",
+    "eventTwoDate": "June 3th",
+    "eventTwoDescription": "Local Festival"
+   },
+    "meats": {
+      "chicken": "Chicken",
+      "shrimp": "Shrimp",
+      "azada": "Grill",
+      "pastor": "Pastor",
+      "birria": "Birria"
+    },
+    "promotions": {
+      "tacoTusdayPromotion": "Every Tusday on Tacos buy 1 get 2"
+    },
+    "contactInfo": {
+      "socialMediaInfo": "You can contact us through our social networks",
+      "workWithUsInfo": "Want to work with us",
+      "clickHere": "click here",
+      "eventAndBusinessInfo": "Events and business",
+      "locationInfo": "We are located in:"
+    },
+    "aboutUs": {
+      "aBitAboutUs": "A little bit about us!",
+      "whatWeDo": "What we do!",
+      "whereWeWantToBe": "Where we want to be!",
+      "whatMakeUsDifferent": "What make us different!"
+    },
+    "dishPromotionPhrase": {
+      "dishPromotionPhraseOne": "The best in the world!",
+      "dishPromotionPhraseTwo": "For every taste!",
+      "dishPromotionPhraseThree": "They can never be missing!",
+      "dishPromotionPhraseFour": "Like homemade!",
+      "dishPromotionPhraseFive": "Do not stay with the desire!"
+    }
 }

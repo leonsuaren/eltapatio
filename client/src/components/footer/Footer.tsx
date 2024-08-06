@@ -1,5 +1,7 @@
 import { type FC } from "react";
 
+import { useTranslation } from "react-i18next"; 
+
 import {
   FooterWrapper,
   FooterContact,
@@ -17,6 +19,8 @@ import {
 } from "./styled";
 
 const Footer: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <FooterWrapper>
       <FooterHeater>
@@ -24,7 +28,7 @@ const Footer: FC = () => {
         </ElTapatioHeader>
       </FooterHeater>
       <FooterContact>
-        <FooterTitles>Contacto</FooterTitles>
+        <FooterTitles>{t('navigation.contactus')}</FooterTitles>
         <p></p>
       </FooterContact>
       <FooterSocial>

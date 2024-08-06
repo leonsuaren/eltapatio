@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import SectionHeader from "../../components/section-header/SectionHeader.tsx";
 
 import {
@@ -24,13 +26,15 @@ import {
 } from "./styled.ts";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <SectionHeader translation="viewsHeaders.about" />
       <AboutUsLayout>
         <FirstDivisor />
         <FirstTextWrapper>
-          <TextTitle>A little bit about us!!!</TextTitle>
+          <TextTitle>{t('aboutUs.aBitAboutUs')}</TextTitle>
           <TextContent>
             Aliquip do cupidatat irure incididunt consequat ullamco laborum sint
             consectetur nostrud. Cupidatat ex enim esse laboris ex consectetur
@@ -56,7 +60,7 @@ const AboutUs = () => {
         </FirstPicturesWrapper>
         <SecondDivisor />
         <SecondTextWrapper>
-          <TextTitle>What we do!!!</TextTitle>
+          <TextTitle>{t('aboutUs.whatWeDo')}</TextTitle>
           <TextContent>
             Aliquip do cupidatat irure incididunt consequat ullamco laborum sint
             consectetur nostrud. Cupidatat ex enim esse laboris ex consectetur
@@ -81,7 +85,7 @@ const AboutUs = () => {
         </SecondPictureWrapper>
         <ThirdDivisor />
         <ThirdTextWrapper>
-          <TextTitle>Where we want to be!!!</TextTitle>
+          <TextTitle>{t('aboutUs.whereWeWantToBe')}</TextTitle>
           <TextContent>
             Aliquip do cupidatat irure incididunt consequat ullamco laborum sint
             consectetur nostrud. Cupidatat ex enim esse laboris ex consectetur
@@ -100,7 +104,7 @@ const AboutUs = () => {
           </TextContent>
         </ThirdTextWrapper>
         <FourthTextWrapper>
-          <TextTitle>What make us different!!!</TextTitle>
+          <TextTitle>{t('aboutUs.whatMakeUsDifferent')}</TextTitle>
           <TextContent>
             Aliquip do cupidatat irure incididunt consequat ullamco laborum sint
             consectetur nostrud. Cupidatat ex enim esse laboris ex consectetur

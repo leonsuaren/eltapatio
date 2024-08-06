@@ -15,11 +15,11 @@ const OurMeats: FC = () => {
     <OurMeatsWrapper>
       <Headers title={t('headers.ourMeats')} />
       <OurMeatsContainer>
-        <MeatsCard title="POLLO" image={{ src: "./pollo-icon.jpeg", alt: "pollo" }} />
-        <MeatsCard title="CAMARON" image={{ src: "./camaron-icon.webp",  alt: "camaron" }}></MeatsCard>
-        <MeatsCard title="AZADA" image={{ src: "./azada-icon.png", alt: "azada" }}></MeatsCard>
-        <MeatsCard title="PASTOR" image={{ src: "./pastor-icon.jpeg", alt: "pastor" }}></MeatsCard>
-        <MeatsCard title="BIRRIA" image={{ src: "birria-icon.jpeg", alt: "birria" }}></MeatsCard>
+        <MeatsCard title={t('meats.chicken')} image={{ src: "./pollo-icon.jpeg", alt: "pollo" }} />
+        <MeatsCard title={t('meats.shrimp')} image={{ src: "./camaron-icon.webp",  alt: "camaron" }}></MeatsCard>
+        <MeatsCard title={t('meats.azada')} image={{ src: "./azada-icon.png", alt: "azada" }}></MeatsCard>
+        <MeatsCard title={t('meats.pastor')} image={{ src: "./pastor-icon.jpeg", alt: "pastor" }}></MeatsCard>
+        <MeatsCard title={t('meats.birria')} image={{ src: "birria-icon.jpeg", alt: "birria" }}></MeatsCard>
       </OurMeatsContainer>
     </OurMeatsWrapper>
   );

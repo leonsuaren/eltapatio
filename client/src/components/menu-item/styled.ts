@@ -14,6 +14,9 @@ export const MenuItemImage = styled.img`
   grid-area: 1 / 1 / 2 / 5;
   width: 100%;
   height: 100%;
+  @media (min-width: 667px) and (max-width: 768px) {
+    grid-area: 1 / 1 / 2 / 4;
+  }
   @media (min-width: 768px) {
     grid-area: 1 / 1 / 2 / 2;
   }

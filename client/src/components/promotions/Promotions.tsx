@@ -1,8 +1,9 @@
 import { type FC } from "react";
 
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
-import  Headers  from './../headers/Headers.tsx';
+import Headers from "./../headers/Headers.tsx";
+import MoreButton from "../more-button/MoreButton.tsx";
 
 import {
   PromotionsWrapper,
@@ -11,7 +12,7 @@ import {
   Promotion,
   PromotionTitle,
   PromotionDescription,
-  PromotionsDetailsShowButton
+  PromotionsDetailsShowButton,
 } from "./styled.ts";
 
 const Promotions: FC = () => {
@@ -19,13 +20,17 @@ const Promotions: FC = () => {
 
   return (
     <PromotionsWrapper>
-      <Headers title={t('headers.promotions')}/>
+      <Headers title={t("headers.promotions")} />
       <PromotionsSection>
         <PromotionsImage src="./comida-mexicana.webp" />
         <Promotion>
           <PromotionTitle>TACO TUESDAY</PromotionTitle>
-          <PromotionDescription>Todos los martes tacos al dos por uno!!!</PromotionDescription>
-          <PromotionsDetailsShowButton><span>Ver Mas</span></PromotionsDetailsShowButton>
+          <PromotionDescription>
+            {t('promotions.tacoTusdayPromotion')}
+          </PromotionDescription>
+          <PromotionsDetailsShowButton>
+            <MoreButton moreText="buttons.more" />
+          </PromotionsDetailsShowButton>
         </Promotion>
       </PromotionsSection>
     </PromotionsWrapper>
