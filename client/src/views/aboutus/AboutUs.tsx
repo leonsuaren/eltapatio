@@ -119,7 +119,7 @@ const AboutUs = () => {
             aliqua ad sint. Aute sit tempor eiusmod ad Lorem enim eiusmod
             ullamco consectetur. Do consectetur elit nisi in fugiat duis veniam
             veniam. Amet est ad do deserunt exercitation fugiat minim
-            reprehenderit ea proident enim laborum.
+            reprehenderit ea proident enim.
           </TextContent>
         </FourthTextWrapper>
         <FourthDivisor />
